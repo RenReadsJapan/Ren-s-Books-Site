@@ -8,14 +8,14 @@ export function generateStaticParams() {
   return books.map((b) => ({ slug: b.slug }));
 }
 
-export function generateMetadata({ params }) {
-  const book = getBookBySlug(params.slug);
-  return { title: book ? book.title : "Book not found" };
+export async function generateMetadata({ params }) {
+     const { slug } = await params;
+     const book = getBookBySlug(slug);
 }
 
-export default function BookPage({ params }) {
-  const book = getBookBySlug(params.slug);
-  if (!book) notFound();
+export default async function BookPage({ params }) {
+     const { slug } = await params;
+     const book = getBookBySlug(slug);
 
   const catalog = Object.values(catalogs).find(
     (c) =>
