@@ -1,0 +1,112 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { books, getBookBySlug, catalogs } from "@/data/books";
+import { accentOf } from "@/lib/accent";
+import ReviewSection from "@/components/ReviewSection";
+
+export function generateStaticParams() {
+  return books.map((b) => ({ slug: b.slug }));
+}
+
+export function generateMetadata({ params }) {
+  const book = getBookBySlug(params.slug);
+  return { title: book ? book.title : "Book not found" };
+}
+
+export default function BookPage({ params }) {
+  const book = getBookBySlug(params.slug);
+  if (!book) notFound();
+
+  const catalog = Object.values(catalogs).find(
+    (c) =>
+      c.slug === book.catalog ||
+      (book.catalog === "everydayTogether" && c.slug === "everyday-together")
+  );
+  const accent = accentOf(catalog.accent);
+  const catalogNumber = `${catalog.catalogCode}-${String(book.number).padStart(2, "0")}`;
+
+  return (
+    <div className="max-w-3xl mx-auto px-6 py-16">
+      <Link
+        href={`/${catalog.slug}`}
+        className="font-mono text-xs uppercase tracking-[0.14em] inline-block mb-8"
+        style={{ color: accent.strong }}
+      >
+        ← {catalog.name}
+      </Link>
+
+      <span
+        className="font-mono text-xs uppercase tracking-[0.18em]"
+        style={{ color: accent.strong }}
+      >
+        {catalogNumber}
+      </span>
+      <h1
+        className="font-display text-4xl sm:text-5xl mt-3 mb-6 leading-tight"
+        style={{ color: "var(--paper-text)" }}
+      >
+        {book.title}
+      </h1>
+
+      {book.wordCount && (
+        <p
+          className="font-mono text-xs uppercase tracking-wide mb-6"
+          style={{ color: "var(--paper-text-soft)" }}
+        >
+          {book.wordCount}
+        </p>
+      )}
+
+      <p
+        className="text-lg leading-relaxed mb-8"
+        style={{ color: "var(--paper-text)" }}
+      >
+        {book.description}
+      </p>
+
+      {book.culturalFocus && (
+        <div
+          className="rounded-md p-5 mb-8"
+          style={{
+            background: "var(--bg-ink-raised)",
+            border: "1px solid var(--rule)",
+          }}
+        >
+          <span
+            className="font-mono text-[11px] uppercase tracking-[0.14em]"
+            style={{ color: accent.strong }}
+          >
+            Cultural focus
+          </span>
+          <p
+            className="text-sm mt-2 leading-relaxed"
+            style={{ color: "var(--paper-text-soft)" }}
+          >
+            {book.culturalFocus}
+          </p>
+        </div>
+      )}
+
+      {book.amazonUrl ? (
+        <a
+          href={book.amazonUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block font-mono text-xs uppercase tracking-[0.14em] px-6 py-3 rounded-sm"
+          style={{ background: accent.strong, color: "var(--bg-ink)" }}
+        >
+          Buy on Amazon
+        </a>
+      ) : (
+        <p
+          className="text-sm italic"
+          style={{ color: "var(--paper-text-soft)" }}
+        >
+          Purchase link coming soon.
+        </p>
+      )}
+
+      <ReviewSection bookSlug={book.slug} accent={accent.strong} />
+    </div>
+  );
+}

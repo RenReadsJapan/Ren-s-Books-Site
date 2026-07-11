@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  /* Base palette — "reading room" dark ground with warm index-card paper */
+  --bg-ink: #1c1a17;
+  --bg-ink-raised: #242019;
+  --bg-paper: #f4efe4;
+  --bg-paper-soft: #ece5d5;
+  --ink-text: #2a2620;
+  --ink-text-soft: #5c5548;
+  --paper-text: #ede7da;
+  --paper-text-soft: #b8b0a0;
+  --rule: rgba(237, 231, 218, 0.14);
+  --rule-soft: rgba(237, 231, 218, 0.08);
+
+  /* Catalog accent colors — carried through as "spine" colors */
+  --accent-ren: #c9622d;
+  --accent-ren-soft: #e0a172;
+  --accent-together: #3e7c7c;
+  --accent-together-soft: #8ab8b8;
+  --accent-shinji: #5b4a94;
+  --accent-shinji-soft: #a493d6;
+  --accent-gold: #c9a227;
+
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-inter);
+  --font-mono: var(--font-mono-plex);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-ink);
+  color: var(--paper-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent-gold);
+  color: var(--bg-ink);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Index-card texture: subtle punched holes at the top of a "card" element */
+.index-card {
+  position: relative;
+  background: var(--bg-paper);
+  color: var(--ink-text);
+}
+.index-card::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 22px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--bg-ink);
+  opacity: 0.1;
+}
