@@ -1,8 +1,9 @@
+
 // ---------------------------------------------------------------------------
 // This file is the entire book catalog. To add, edit, or remove a book,
 // just edit the arrays below — no other code needs to change.
 // ---------------------------------------------------------------------------
-
+ 
 export const catalogs = {
   ren: {
     slug: "ren",
@@ -35,7 +36,7 @@ export const catalogs = {
     catalogCode: "SHJ",
   },
 };
-
+ 
 export const books = [
   // ---------------------------------------------------------------------
   // REN ENGLISH READERS
@@ -43,12 +44,23 @@ export const books = [
   // (Books 2, 4, 6, 9, 11, 19, 20, etc.) the same way as you finalize them.
   // ---------------------------------------------------------------------
   {
-    slug: "ren-01-the-shrine-visit",
+    slug: "ren-01-the-haunted-shrine-visit",
     catalog: "ren",
     number: 1,
-    title: "The Shrine Visit",
+    title: "The Haunted Shrine Visit",
     description:
       "The first Ren English Readers story — an introduction to Ren, Hana, and the local shrine that becomes the heart of the series.",
+    status: "published",
+    amazonUrl: "",
+  },
+  {
+    slug: "ren-02-riding-the-train",
+    catalog: "ren",
+    number: 2,
+    title: "Riding the Train",
+    description:
+      "Ren gets his first IC card and learns to navigate the train system with Hana, Sora, and Momo — while a strange encounter at the shrine lingers in the background.",
+    wordCount: "~2,300 words",
     status: "published",
     amazonUrl: "",
   },
@@ -62,11 +74,33 @@ export const books = [
     amazonUrl: "",
   },
   {
+    slug: "ren-04-festival-fever",
+    catalog: "ren",
+    number: 4,
+    title: "Festival Fever",
+    description:
+      "The friends head to a summer street festival full of takoyaki, kakigori, and games — but Sora's nerves about the crowds threaten to keep him away.",
+    wordCount: "~2,600 words",
+    status: "published",
+    amazonUrl: "",
+  },
+  {
     slug: "ren-05-time-slip-trouble",
     catalog: "ren",
     number: 5,
     title: "Time Slip Trouble",
     description: "A strange event pulls Ren and his friends out of their ordinary day and into trouble.",
+    status: "published",
+    amazonUrl: "",
+  },
+  {
+    slug: "ren-06-valentines-day-mix-up",
+    catalog: "ren",
+    number: 6,
+    title: "Valentine's Day Mix-up",
+    description:
+      "Hana and Momo make homemade \u201cfriendship chocolate\u201d for Valentine's Day, walking through the customs — and small mix-ups — of a Japanese Valentine's.",
+    wordCount: "~2,800 words",
     status: "published",
     amazonUrl: "",
   },
@@ -89,11 +123,33 @@ export const books = [
     amazonUrl: "",
   },
   {
+    slug: "ren-09-the-last-bell",
+    catalog: "ren",
+    number: 9,
+    title: "The Last Bell",
+    description:
+      "A late-night hatsumode shrine visit turns strange when the friends meet a mysterious girl in an old kimono, deepening the shrine's growing mystery.",
+    wordCount: "~3,000 words",
+    status: "published",
+    amazonUrl: "",
+  },
+  {
     slug: "ren-10-cherry-blossom-magic",
     catalog: "ren",
     number: 10,
     title: "Cherry Blossom Magic",
     description: "A springtime story woven with a touch of the series' growing supernatural thread.",
+    status: "published",
+    amazonUrl: "",
+  },
+  {
+    slug: "ren-11-the-idol-competition",
+    catalog: "ren",
+    number: 11,
+    title: "The Idol Competition",
+    description:
+      "Momo works up the courage to compete in a televised idol competition, with her friends rallying to calm her nerves before the biggest tryout of her life.",
+    wordCount: "~3,200 words",
     status: "published",
     amazonUrl: "",
   },
@@ -161,15 +217,28 @@ export const books = [
     amazonUrl: "",
   },
   {
-    slug: "ren-20-untitled",
+    slug: "ren-19-the-cowardly-detective",
     catalog: "ren",
-    number: 20,
-    title: "Coming Soon",
-    description: "The resolution of the supernatural trilogy arc that began in Books 12, 16, and 17.",
-    status: "upcoming",
+    number: 19,
+    title: "The Cowardly Detective",
+    description:
+      "Channeling their favorite detective stories, Ren, Hana, and Sora search for the missing shrine priest — and end up helping Miwa search for someone of her own.",
+    wordCount: "~2,200 words",
+    status: "published",
     amazonUrl: "",
   },
-
+  {
+    slug: "ren-20-return-to-the-shrine",
+    catalog: "ren",
+    number: 20,
+    title: "Return to the Shrine",
+    description:
+      "The series finale. The friends finally track down the shrine priest and uncover a centuries-old secret — and Ren makes a binding promise that will carry the story into the B1 series.",
+    wordCount: "~3,000 words",
+    status: "published",
+    amazonUrl: "",
+  },
+ 
   // ---------------------------------------------------------------------
   // EVERYDAY TOGETHER
   // ---------------------------------------------------------------------
@@ -269,7 +338,7 @@ export const books = [
     status: "published",
     amazonUrl: "",
   },
-
+ 
   // ---------------------------------------------------------------------
   // SHINJI
   // ---------------------------------------------------------------------
@@ -284,17 +353,18 @@ export const books = [
     amazonUrl: "",
   },
 ];
-
+ 
 export function getCatalog(slug) {
   return Object.values(catalogs).find((c) => c.slug === slug);
 }
-
+ 
 export function getBooksForCatalog(catalogKey) {
   return books
     .filter((b) => b.catalog === catalogKey)
     .sort((a, b) => a.number - b.number);
 }
-
+ 
 export function getBookBySlug(slug) {
   return books.find((b) => b.slug === slug);
 }
+ 
