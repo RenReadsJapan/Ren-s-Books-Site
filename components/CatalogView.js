@@ -1,13 +1,13 @@
 import BookCard from "@/components/BookCard";
-import { getBooksForCatalog } from "@/data/books";
+import CollectionCard from "@/components/CollectionCard";
+import { getBooksForCatalog, getCollectionsForCatalog } from "@/data/books";
 import { accentOf } from "@/lib/accent";
 
 export default function CatalogView({ catalog }) {
-  const books = getBooksForCatalog(
-    catalog.slug === "everyday-together"
-      ? "everydayTogether"
-      : catalog.slug
-  );
+  const catalogKey =
+    catalog.slug === "everyday-together" ? "everydayTogether" : catalog.slug;
+  const books = getBooksForCatalog(catalogKey);
+  const collections = getCollectionsForCatalog(catalogKey);
   const accent = accentOf(catalog.accent);
 
   return (
@@ -42,6 +42,29 @@ export default function CatalogView({ catalog }) {
           ))}
         </div>
       </section>
+
+      {collections.length > 0 && (
+        <section
+          className="max-w-6xl mx-auto px-6 pb-20 pt-4 border-t"
+          style={{ borderColor: "var(--rule)" }}
+        >
+          <h2
+            className="font-display text-3xl mt-10 mb-6"
+            style={{ color: "var(--paper-text)" }}
+          >
+            Paperback Collections
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {collections.map((collection) => (
+              <CollectionCard
+                key={collection.slug}
+                collection={collection}
+                catalog={catalog}
+              />
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   );
 }
