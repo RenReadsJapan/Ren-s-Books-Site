@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { books, getBookBySlug, catalogs } from "@/data/books";
@@ -9,13 +10,15 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-     const { slug } = await params;
-     const book = getBookBySlug(slug);
+  const { slug } = await params;
+  const book = getBookBySlug(slug);
+  return { title: book ? book.title : "Book not found" };
 }
 
 export default async function BookPage({ params }) {
-     const { slug } = await params;
-     const book = getBookBySlug(slug);
+  const { slug } = await params;
+  const book = getBookBySlug(slug);
+  if (!book) notFound();
 
   const catalog = Object.values(catalogs).find(
     (c) =>
@@ -35,27 +38,42 @@ export default async function BookPage({ params }) {
         ← {catalog.name}
       </Link>
 
-      <span
-        className="font-mono text-xs uppercase tracking-[0.18em]"
-        style={{ color: accent.strong }}
-      >
-        {catalogNumber}
-      </span>
-      <h1
-        className="font-display text-4xl sm:text-5xl mt-3 mb-6 leading-tight"
-        style={{ color: "var(--paper-text)" }}
-      >
-        {book.title}
-      </h1>
-
-      {book.wordCount && (
-        <p
-          className="font-mono text-xs uppercase tracking-wide mb-6"
-          style={{ color: "var(--paper-text-soft)" }}
-        >
-          {book.wordCount}
-        </p>
-      )}
+      <div className={book.coverImage ? "sm:flex sm:gap-8 mb-8" : ""}>
+        {book.coverImage && (
+          <div className="relative w-40 sm:w-48 aspect-[3/4] shrink-0 mb-6 sm:mb-0 rounded-sm overflow-hidden">
+            <Image
+              src={book.coverImage}
+              alt={`Cover of ${book.title}`}
+              fill
+              sizes="200px"
+              className="object-cover"
+              priority
+            />
+          </div>
+        )}
+        <div>
+          <span
+            className="font-mono text-xs uppercase tracking-[0.18em]"
+            style={{ color: accent.strong }}
+          >
+            {catalogNumber}
+          </span>
+          <h1
+            className="font-display text-4xl sm:text-5xl mt-3 mb-3 leading-tight"
+            style={{ color: "var(--paper-text)" }}
+          >
+            {book.title}
+          </h1>
+          {book.wordCount && (
+            <p
+              className="font-mono text-xs uppercase tracking-wide"
+              style={{ color: "var(--paper-text-soft)" }}
+            >
+              {book.wordCount}
+            </p>
+          )}
+        </div>
+      </div>
 
       <p
         className="text-lg leading-relaxed mb-8"
