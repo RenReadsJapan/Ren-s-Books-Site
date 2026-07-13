@@ -379,7 +379,7 @@ coverImage: "/covers/et-08.png",
       "The first book in the Shinji series. More details coming soon.",
     status: "published",
 coverImage: "/covers/shinji-01.png",
-    amazonUrl: "",
+    amazonUrl: "https://www.royalroad.com/fiction/160052/shinji-inherits-a-ghost-house?utm_source=home&utm_medium=reading-history",
   },
 ];
  
