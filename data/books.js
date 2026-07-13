@@ -51,6 +51,7 @@ export const books = [
     description:
       "The first Ren English Readers story — an introduction to Ren, Hana, and the local shrine that becomes the heart of the series.",
     status: "published",
+coverImage: "/covers/ren-01.png",
     amazonUrl: "",
   },
   {
