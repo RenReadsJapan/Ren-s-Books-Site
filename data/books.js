@@ -53,6 +53,7 @@ export const books = [
     status: "published",
 coverImage: "/covers/ren-01.png",
     amazonUrl: "https://www.amazon.co.jp/-/en/gp/product/B0GZB7SBY8?ref_=dbs_m_nmg_rwt_calw_tkin_0&storeType=ebooks",
+    amazonUrlUS: "https://www.amazon.com/gp/product/B0GZB7SBY8?ref_=dbs_m_mng_rwt_calw_tkin_0&storeType=ebooks&qid=1783923574&sr=8-4",
   },
   {
     slug: "ren-02-riding-the-train",
