@@ -405,3 +405,44 @@ export function getBookBySlug(slug) {
   return books.find((b) => b.slug === slug);
 }
  
+// ---------------------------------------------------------------------------
+// PAPERBACK COLLECTIONS — bundled print editions, separate from individual
+// ebooks. To add a new collection (e.g. for Everyday Together once it's
+// ready), copy an entry below and set catalog to "everydayTogether".
+// ---------------------------------------------------------------------------
+export const collections = [
+  {
+    slug: "ren-collected-1",
+    catalog: "ren",
+    title: "Ren English Readers: Collected Book 1",
+    includes: [
+      "The Haunted Shrine Visit",
+      "Riding the Train",
+      "Ren's First Day at School",
+      "Festival Fever",
+    ],
+    description:
+      "Books 1–4, bundled together in one paperback — the opening arc of the Ren series, from the first shrine visit through festival season.",
+    coverImage: "",
+    amazonUrl: "",
+  },
+  {
+    slug: "ren-collected-2",
+    catalog: "ren",
+    title: "Ren English Readers: Collected Book 2",
+    includes: [
+      "Time Slip Trouble",
+      "Valentine's Day Mix-up",
+      "The Soccer Bully",
+      "Culture Shock",
+    ],
+    description:
+      "Books 5–8, bundled together in one paperback — continuing the friends' everyday adventures through the school year.",
+    coverImage: "",
+    amazonUrl: "",
+  },
+];
+
+export function getCollectionsForCatalog(catalogKey) {
+  return collections.filter((c) => c.catalog === catalogKey);
+}
