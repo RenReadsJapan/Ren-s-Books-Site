@@ -378,6 +378,7 @@ coverImage: "/covers/et-08.png",
     description:
       "The first book in the Shinji series. More details coming soon.",
     status: "published",
+coverImage: "/covers/shinji-01.png",
     amazonUrl: "",
   },
 ];
