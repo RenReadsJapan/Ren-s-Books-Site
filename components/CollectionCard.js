@@ -42,16 +42,31 @@ export default function CollectionCard({ collection, catalog }) {
         >
           Includes: {collection.includes.join(" · ")}
         </p>
-        {collection.amazonUrl ? (
-          <a
-            href={collection.amazonUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block self-start font-mono text-[11px] uppercase tracking-[0.14em] px-5 py-2.5 rounded-sm"
-            style={{ background: "var(--accent-gold)", color: "var(--bg-ink)" }}
-          >
-            Buy the paperback
-          </a>
+        {collection.amazonUrl || collection.amazonUrlUS ? (
+          <div className="flex flex-wrap gap-3">
+            {collection.amazonUrl && (
+              <a
+                href={collection.amazonUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block self-start font-mono text-[11px] uppercase tracking-[0.14em] px-5 py-2.5 rounded-sm"
+                style={{ background: "var(--accent-gold)", color: "var(--bg-ink)" }}
+              >
+                {collection.amazonUrlUS ? "Buy on Amazon.co.jp" : "Buy the paperback"}
+              </a>
+            )}
+            {collection.amazonUrlUS && (
+              <a
+                href={collection.amazonUrlUS}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block self-start font-mono text-[11px] uppercase tracking-[0.14em] px-5 py-2.5 rounded-sm border"
+                style={{ borderColor: "var(--accent-gold)", color: "var(--accent-gold)" }}
+              >
+                Buy on Amazon.com
+              </a>
+            )}
+          </div>
         ) : (
           <span
             className="text-xs italic"
