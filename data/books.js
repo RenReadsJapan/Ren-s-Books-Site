@@ -425,6 +425,7 @@ export const collections = [
       "Books 1–4, bundled together in one paperback — the opening arc of the Ren series, from the first shrine visit through festival season.",
     coverImage: "/covers/ren-collected-01.png",
     amazonUrl: "https://www.amazon.co.jp/-/en/Ren-English-Readers-Books-1-4/dp/B0H2J3MK13/ref=sr_1_2?crid=3TU97KBWT6YD8&dib=eyJ2IjoiMSJ9.7lkML_F7ga4BYmXM8FK4f7DpQr-4haP5L4k5mbrkdk55MbXS-P-VwlhYfZ4_inxe4AriDbm91VKiL8R0wDlYOA.pvJqhXSMKRFgsRx25YTAFUZI3RsYOsIlH66dmKJ9EzM&dib_tag=se&keywords=ren+english+readers&qid=1783926064&sprefix=%2Caps%2C286&sr=8-2",
+amazonUrlUS: "https://www.amazon.com/Ren-English-Readers-Books-1-4/dp/B0H2J3MK13/ref=sr_1_1?crid=4L8RD9M0AW5I&dib=eyJ2IjoiMSJ9.Bb_F94g8lZBOLFcUwSGpc_Wo74TCMdllaKArqrZfVizy7NdkTJtNOHIYib39_t0SCxalAPoIN53GaQUJ-P1RUuMgvVXXgWnYIBdqwmw07ZaYRih2uWPz2ASGvGjTCpjBd-pSZJq6Yv1DA-dCTC2EHCRVzIO-FNprn1EXY7D5yiih_5FdMXlSj1nkbJyWaiyT-V-TZO99mhM_Usq2JJ7rtY0p20ub-6f-zbxJ7Go6b7A.su_oQa8wYjEYcV4fyYD7Agg4AODTJV8iOBn-udWFWFU&dib_tag=se&keywords=raymond+paquette&qid=1783927331&sprefix=%2Caps%2C436&sr=8-1",
 
   },
   {
@@ -441,6 +442,8 @@ export const collections = [
       "Books 5–8, bundled together in one paperback — continuing the friends' everyday adventures through the school year.",
     coverImage: "/covers/ren-collected-02.png",
     amazonUrl: "https://www.amazon.co.jp/-/en/Raymond-Paquette/dp/B0H82H55GZ/ref=sr_1_1?crid=3TU97KBWT6YD8&dib=eyJ2IjoiMSJ9.7lkML_F7ga4BYmXM8FK4f7DpQr-4haP5L4k5mbrkdk55MbXS-P-VwlhYfZ4_inxe4AriDbm91VKiL8R0wDlYOA.pvJqhXSMKRFgsRx25YTAFUZI3RsYOsIlH66dmKJ9EzM&dib_tag=se&keywords=ren+english+readers&qid=1783926064&sprefix=%2Caps%2C286&sr=8-1",
+amazonUrlUS: "https://www.amazon.com/Ren-English-Readers-Books-5-8/dp/B0H82H55GZ/ref=sr_1_2?crid=4L8RD9M0AW5I&dib=eyJ2IjoiMSJ9.Bb_F94g8lZBOLFcUwSGpc_Wo74TCMdllaKArqrZfVizy7NdkTJtNOHIYib39_t0SCxalAPoIN53GaQUJ-P1RUuMgvVXXgWnYIBdqwmw07ZaYRih2uWPz2ASGvGjTCpjBd-pSZJq6Yv1DA-dCTC2EHCRVzIO-FNprn1EXY7D5yiih_5FdMXlSj1nkbJyWaiyT-V-TZO99mhM_Usq2JJ7rtY0p20ub-6f-zbxJ7Go6b7A.su_oQa8wYjEYcV4fyYD7Agg4AODTJV8iOBn-udWFWFU&dib_tag=se&keywords=raymond+paquette&qid=1783927331&sprefix=%2Caps%2C436&sr=8-2",
+
   },
 ];
 
