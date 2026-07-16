@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { catalogs, getBooksForCatalog } from "@/data/books";
 import { accentOf } from "@/lib/accent";
@@ -11,27 +12,45 @@ const catalogList = [
 export default function Home() {
   return (
     <div>
-      <section className="max-w-6xl mx-auto px-6 pt-20 pb-16">
-        <span
-          className="font-mono text-xs uppercase tracking-[0.18em]"
-          style={{ color: "var(--accent-gold)" }}
-        >
-          English Readers &amp; Fiction, written in Japan
-        </span>
-        <h1
-          className="font-display text-5xl sm:text-6xl mt-4 mb-6 leading-[1.05] max-w-3xl"
-          style={{ color: "var(--paper-text)" }}
-        >
-          Stories built for the readers who actually use them.
-        </h1>
-        <p
-          className="text-lg max-w-xl leading-relaxed"
-          style={{ color: "var(--paper-text-soft)" }}
-        >
-          Three catalogs, one author: graded readers for young learners,
-          graded readers for working adults, and a YA mystery series — all
-          written from twenty years teaching English in the Kansai region.
-        </p>
+      <section className="max-w-6xl mx-auto px-6 pt-16 pb-16">
+        <div className="grid lg:grid-cols-[1.1fr_1fr] gap-10 lg:gap-14 items-center">
+          <div>
+            <span
+              className="font-mono text-xs uppercase tracking-[0.18em]"
+              style={{ color: "var(--accent-gold)" }}
+            >
+              English Readers &amp; Fiction, written in Japan
+            </span>
+            <h1
+              className="font-display text-5xl sm:text-6xl mt-4 mb-6 leading-[1.05]"
+              style={{ color: "var(--paper-text)" }}
+            >
+              Stories built for the readers who actually use them.
+            </h1>
+            <p
+              className="text-lg max-w-xl leading-relaxed"
+              style={{ color: "var(--paper-text-soft)" }}
+            >
+              Three catalogs, one author: graded readers for young learners,
+              graded readers for working adults, and a YA mystery series —
+              all written from twenty years teaching English in the Kansai
+              region.
+            </p>
+          </div>
+          <div
+            className="relative rounded-md overflow-hidden"
+            style={{ border: "1px solid var(--rule)" }}
+          >
+            <Image
+              src="/images/hero-ren-friends.png"
+              alt="Ren and his friends walking together under cherry blossoms"
+              width={1717}
+              height={916}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+        </div>
       </section>
 
       <section className="max-w-6xl mx-auto px-6 pb-24">
