@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { catalogs, getBooksForCatalog } from "@/data/books";
 import { accentOf } from "@/lib/accent";
+import HeroCarousel from "@/components/HeroCarousel";
 
 const catalogList = [
   { ...catalogs.ren, key: "ren" },
@@ -37,19 +37,7 @@ export default function Home() {
               region.
             </p>
           </div>
-          <div
-            className="relative rounded-md overflow-hidden"
-            style={{ border: "1px solid var(--rule)" }}
-          >
-            <Image
-              src="/images/hero-ren-friends.png"
-              alt="Ren and his friends walking together under cherry blossoms"
-              width={1717}
-              height={916}
-              className="w-full h-auto"
-              priority
-            />
-          </div>
+          <HeroCarousel />
         </div>
       </section>
 
