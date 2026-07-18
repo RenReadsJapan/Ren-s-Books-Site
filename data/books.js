@@ -374,7 +374,19 @@ coverImage: "/covers/et-07.png",
 coverImage: "/covers/et-08.png",
     amazonUrl: "",
   },
- 
+ {
+    slug: "et-09-the-onsen-trip",
+    catalog: "everydayTogether",
+    number: 9,
+    title: "The Onsen Trip",
+    description:
+      "Daichi has booked an onsen trip for him and his friends. However, there Yui uncovers the true reason for it. Will Daichi's secret bring the group together or destroy it?",
+    culturalFocus: "Onsen culture; what to do at a rotenburo; friendship and trust; learning to express yourself.",
+    wordCount: "~3,000 words",
+    status: "published",
+coverImage: "/covers/et-09.png",
+    amazonUrl: "",
+  },
   // ---------------------------------------------------------------------
   // SHINJI
   // ---------------------------------------------------------------------
