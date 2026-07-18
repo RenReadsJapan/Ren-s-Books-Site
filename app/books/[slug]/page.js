@@ -115,8 +115,7 @@ export default async function BookPage({ params }) {
             className="inline-block font-mono text-xs uppercase tracking-[0.14em] px-6 py-3 rounded-sm"
             style={{ background: accent.strong, color: "var(--bg-ink)" }}
           >
-            {book.amazonUrlUS ? "Buy on Amazon.co.jp" : "Buy on Amazon"}
-          </a>
+{book.linkLabel ? book.linkLabel : book.amazonUrlUS ? "Buy on Amazon.co.jp" : "Buy on Amazon"}          </a>
         ) : (
           <p
             className="text-sm italic"

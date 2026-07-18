@@ -400,6 +400,7 @@ coverImage: "/covers/et-09.png",
     status: "published",
 coverImage: "/covers/shinji-01.png",
     amazonUrl: "https://www.royalroad.com/fiction/160052/shinji-inherits-a-ghost-house?utm_source=home&utm_medium=reading-history",
+    linkLabel: "Read on Royal Road",
   },
 ];
  
