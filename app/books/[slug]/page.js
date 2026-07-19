@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { books, getBookBySlug, catalogs } from "@/data/books";
 import { accentOf } from "@/lib/accent";
 import ReviewSection from "@/components/ReviewSection";
+import bookContent from "@/content";
  
 export function generateStaticParams() {
   return books.map((b) => ({ slug: b.slug }));
@@ -135,9 +136,19 @@ export default async function BookPage({ params }) {
             Buy on Amazon.com
           </a>
         )}
+              {bookContent[book.slug] && (
+  <Link
+    href={`/books/${book.slug}/read`}
+    className="inline-block font-mono text-xs uppercase"
+    style={{ borderColor: accent.strong, color: accent.strong }}
+  >
+    Read Online
+  </Link>
+)}
       </div>
  
       <ReviewSection bookSlug={book.slug} accent={accent.strong} />
+
     </div>
   );
 }
