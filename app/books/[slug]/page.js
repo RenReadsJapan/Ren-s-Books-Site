@@ -136,11 +136,11 @@ export default async function BookPage({ params }) {
             Buy on Amazon.com
           </a>
         )}
-              {bookContent[book.slug] && (
+{bookContent[book.slug] && (
   <Link
     href={`/books/${book.slug}/read`}
-    className="inline-block font-mono text-xs uppercase"
-    style={{ borderColor: accent.strong, color: accent.strong }}
+    className="inline-block font-mono text-xs uppercase tracking-[0.14em] px-6 py-3 rounded-sm"
+    style={{ backgroundColor: accent.strong, color: '#fff' }}
   >
     Read Online
   </Link>
