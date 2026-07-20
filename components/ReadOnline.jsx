@@ -51,6 +51,12 @@ function VocabularyTab({ vocabulary, idioms }) {
     textAlign: 'left',
     verticalAlign: 'top',
   };
+  const exampleStyle = {
+    display: 'block',
+    fontStyle: 'italic',
+    color: 'var(--paper-text-soft, #999)',
+    marginTop: '0.2em',
+  };
   return (
     <div>
       <h3 style={{ marginBottom: '0.5em' }}>Vocabulary</h3>
@@ -64,8 +70,14 @@ function VocabularyTab({ vocabulary, idioms }) {
         <tbody>
           {vocabulary.map((v, i) => (
             <tr key={i}>
-              <td style={cellStyle}>{v.word}</td>
-              <td style={cellStyle}>{v.translation}</td>
+              <td style={cellStyle}>
+                {v.word}
+                {v.partOfSpeech && <span style={exampleStyle}>({v.partOfSpeech})</span>}
+              </td>
+              <td style={cellStyle}>
+                {v.translation}
+                {v.example && <span style={exampleStyle}>&ldquo;{v.example}&rdquo;</span>}
+              </td>
             </tr>
           ))}
         </tbody>
@@ -83,7 +95,10 @@ function VocabularyTab({ vocabulary, idioms }) {
           {idioms.map((idiom, i) => (
             <tr key={i}>
               <td style={cellStyle}>{idiom.phrase}</td>
-              <td style={cellStyle}>{idiom.meaning}</td>
+              <td style={cellStyle}>
+                {idiom.meaning}
+                {idiom.example && <span style={exampleStyle}>{idiom.example}</span>}
+              </td>
             </tr>
           ))}
         </tbody>
