@@ -274,65 +274,77 @@ const bookContent = {
   ],
   "idioms": [
     {
-      "phrase": "Count me in",
-      "meaning": "I want to join / I want to come too",
-      "example": "\"Count me in. I love listening to Dai-chan sing.\""
-    },
-    {
-      "phrase": "can't use polite speech to save his life",
-      "meaning": "is completely unable to do something, no matter how hard he tries",
-      "example": "\"Takumi's pretty good, for someone who can't use polite speech to save his life.\""
-    },
-    {
-      "phrase": "Come on",
-      "meaning": "Please / Don't be like that (used to encourage someone)",
-      "example": "\"Come on, Ka-chan. I'll pick you up after work.\""
-    },
-    {
-      "phrase": "No problem",
-      "meaning": "It's okay / Don't worry about it",
-      "example": "\"No problem,\" said the boss. \"Enjoy your evening.\""
-    },
-    {
-      "phrase": "I knew I could count on you",
-      "meaning": "I knew I could trust/rely on you to help",
-      "example": "\"Great. I knew I could count on you.\" He picked up his drink and went back to the stage."
-    },
-    {
-      "phrase": "I guess so",
-      "meaning": "I think yes / Okay, if I have to (said without much enthusiasm)",
-      "example": "Kaoru bit her lip. \"I guess so,\" she said."
-    },
-    {
-      "phrase": "make fun of (someone)",
-      "meaning": "to laugh at someone or joke about them in a mean way",
-      "example": "\"He didn't make fun of me once the concert started.\""
-    },
-    {
-      "phrase": "You beat me today",
-      "meaning": "You arrived before me / You got here first",
-      "example": "\"Hey, you beat me today,\" Honoka said."
-    },
-    {
-      "phrase": "Don't worry about it",
-      "meaning": "It's okay / There is no problem",
-      "example": "\"Don't worry about it,\" said Honoka. \"I finished early too.\""
-    },
-    {
-      "phrase": "It's a start",
-      "meaning": "It is not perfect, but it is a good beginning",
-      "example": "\"They are a small company, but it's a start.\""
-    },
-    {
-      "phrase": "pop up",
-      "meaning": "to appear suddenly",
-      "example": "Fifty messages popped up. She bit her lip and checked them."
-    },
-    {
-      "phrase": "head back",
-      "meaning": "to return / to go back to a place",
-      "example": "\"Maybe I'll head back to work after one song,\" she thought."
-    }
+    "phrase": "Count me in",
+    "meaning": "I want to join / I want to come too",
+    "translation": "私も参加します・私も行きます",
+    "example": "\"Count me in. I love listening to Dai-chan sing.\""
+  },
+  {
+    "phrase": "can't use polite speech to save his life",
+    "meaning": "is completely unable to do something, no matter how hard he tries",
+    "translation": "命がかかっていても敬語が使えない（大げさな表現）",
+    "example": "\"Takumi's pretty good, for someone who can't use polite speech to save his life.\""
+  },
+  {
+    "phrase": "Come on",
+    "meaning": "Please / Don't be like that (used to encourage someone)",
+    "translation": "もう、そんなこと言わないで（相手を励ます表現）",
+    "example": "\"Come on, Ka-chan. I'll pick you up after work.\""
+  },
+  {
+    "phrase": "No problem",
+    "meaning": "It's okay / Don't worry about it",
+    "translation": "大丈夫です、問題ありません",
+    "example": "\"No problem,\" said the boss. \"Enjoy your evening.\""
+  },
+  {
+    "phrase": "I knew I could count on you",
+    "meaning": "I knew I could trust/rely on you to help",
+    "translation": "やっぱり頼りになると思っていたよ",
+    "example": "\"Great. I knew I could count on you.\" He picked up his drink and went back to the stage."
+  },
+  {
+    "phrase": "I guess so",
+    "meaning": "I think yes / Okay, if I have to (said without much enthusiasm)",
+    "translation": "まあ、そうですね（あまり気乗りしない様子で）",
+    "example": "Kaoru bit her lip. \"I guess so,\" she said."
+  },
+  {
+    "phrase": "make fun of (someone)",
+    "meaning": "to laugh at someone or joke about them in a mean way",
+    "translation": "（人を）からかう、笑いものにする",
+    "example": "\"He didn't make fun of me once the concert started.\""
+  },
+  {
+    "phrase": "You beat me today",
+    "meaning": "You arrived before me / You got here first",
+    "translation": "今日は先を越されたね",
+    "example": "\"Hey, you beat me today,\" Honoka said."
+  },
+  {
+    "phrase": "Don't worry about it",
+    "meaning": "It's okay / There is no problem",
+    "translation": "気にしないで、大丈夫だよ",
+    "example": "\"Don't worry about it,\" said Honoka. \"I finished early too.\""
+  },
+  {
+    "phrase": "It's a start",
+    "meaning": "It is not perfect, but it is a good beginning",
+    "translation": "まずは一歩前進だね",
+    "example": "\"They are a small company, but it's a start.\""
+  },
+  {
+    "phrase": "pop up",
+    "meaning": "to appear suddenly",
+    "translation": "突然現れる",
+    "example": "Fifty messages popped up. She bit her lip and checked them."
+  },
+  {
+    "phrase": "head back",
+    "meaning": "to return / to go back to a place",
+    "translation": "戻る、帰る",
+    "example": "\"Maybe I'll head back to work after one song,\" she thought."
+  }
   ],
   "workbook": {
     "wordBank": [
