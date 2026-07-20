@@ -188,17 +188,33 @@ function WorkbookTab({ workbook }) {
         {showAnswers ? 'Hide Answer Key' : 'Show Answer Key'}
       </button>
 
-      {showAnswers && (
-        <div style={{ marginTop: '1em', padding: '1em', background: 'var(--paper-bg-alt, #f5f2ea)' }}>
-          <p><strong>A.</strong> {workbook.fillInBlankAnswers.join(', ')}</p>
-          <p>
-            <strong>B.</strong>{' '}
-            {workbook.multipleChoice
-              .map((mc, i) => `${i + 1}. ${String.fromCharCode(97 + mc.answer)}`)
-              .join('  ')}
-          </p>
-        </div>
-      )}
+{showAnswers && (
+  <div
+    style={{
+      marginTop: '1em',
+      padding: '1.2em',
+      background: '#2a2a2a',
+      border: '1px solid var(--paper-text-soft, #999)',
+      borderRadius: '4px',
+    }}
+  >
+    <h4 style={{ marginBottom: '0.6em', color: '#fff' }}>Section A — Fill in the Blank</h4>
+    <ol style={{ marginBottom: '1.5em', color: '#f0f0f0' }}>
+      {workbook.fillInBlankAnswers.map((ans, i) => (
+        <li key={i} style={{ marginBottom: '0.3em' }}>{ans}</li>
+      ))}
+    </ol>
+
+    <h4 style={{ marginBottom: '0.6em', color: '#fff' }}>Section B — Multiple Choice</h4>
+    <ol style={{ color: '#f0f0f0' }}>
+      {workbook.multipleChoice.map((mc, i) => (
+        <li key={i} style={{ marginBottom: '0.3em' }}>
+          {String.fromCharCode(97 + mc.answer)}
+        </li>
+      ))}
+    </ol>
+  </div>
+)}
     </div>
   );
 }
