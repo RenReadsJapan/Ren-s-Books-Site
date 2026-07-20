@@ -14,6 +14,7 @@ export const catalogs = {
       "Ren English Readers follows a group of friends through slice-of-life adventures in Japan — school days, festivals, and a slow-building supernatural mystery tied to a local shrine. Written for young Japanese learners at A2 / Eiken Grade 3 level, with characters drawn as cats in the classic Carl Barks tradition.",
     accent: "ren",
     catalogCode: "REN",
+    charactersImage: "/characters/ren-characters.png",
   },
   everydayTogether: {
     slug: "everyday-together",
@@ -23,6 +24,7 @@ export const catalogs = {
     description:
       "Everyday Together follows four adult friends — Yui, Kaoru, Daichi, and Takumi — through a year of ordinary life in contemporary Osaka. Natural, idiomatic English at A2–B1 level, grounded in the real texture of Japanese daily life: overtime, LINE etiquette, konbini runs, and the quiet mechanics of friendship.",
     accent: "together",
+    charactersImage: "/characters/et-characters.png",
     catalogCode: "ET",
   },
   shinji: {

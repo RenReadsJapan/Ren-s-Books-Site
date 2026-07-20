@@ -16,23 +16,35 @@ export default function CatalogView({ catalog }) {
         className="border-b"
         style={{ borderColor: "var(--rule)" }}
       >
-        <div className="max-w-6xl mx-auto px-6 pt-16 pb-14">
-          <span
-            className="font-mono text-xs uppercase tracking-[0.18em]"
-            style={{ color: accent.strong }}
-          >
-            {catalog.level}
-          </span>
-          <h1 className="font-display text-5xl mt-3 mb-4" style={{ color: "var(--paper-text)" }}>
-            {catalog.name}
-          </h1>
-          <p
-            className="text-lg max-w-2xl leading-relaxed"
-            style={{ color: "var(--paper-text-soft)" }}
-          >
-            {catalog.description}
-          </p>
-        </div>
+<div className="max-w-6xl mx-auto px-6 pt-16 pb-14">
+  <div className={catalog.charactersImage ? "grid md:grid-cols-2 gap-10 items-center" : ""}>
+    <div>
+      <span
+        className="font-mono text-xs uppercase tracking-[0.18em]"
+        style={{ color: accent.strong }}
+      >
+        {catalog.level}
+      </span>
+      <h1 className="font-display text-5xl mt-3 mb-4" style={{ color: "var(--paper-text)" }}>
+        {catalog.name}
+      </h1>
+      <p
+        className="text-lg max-w-2xl leading-relaxed"
+        style={{ color: "var(--paper-text-soft)" }}
+      >
+        {catalog.description}
+      </p>
+    </div>
+
+    {catalog.charactersImage && (
+      <img
+        src={catalog.charactersImage}
+        alt={`${catalog.name} character introductions`}
+        className="w-full rounded-sm"
+      />
+    )}
+  </div>
+</div>
       </section>
 
       <section className="max-w-6xl mx-auto px-6 py-16">
