@@ -84,25 +84,27 @@ function VocabularyTab({ vocabulary, idioms }) {
       </table>
 
       <h3 style={{ marginBottom: '0.5em' }}>Idiomatic Expressions</h3>
-      <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-        <thead>
-          <tr>
-            <th style={cellStyle}>Expression</th>
-            <th style={cellStyle}>Meaning / Context</th>
-          </tr>
-        </thead>
-        <tbody>
-          {idioms.map((idiom, i) => (
-            <tr key={i}>
-              <td style={cellStyle}>{idiom.phrase}</td>
-              <td style={cellStyle}>
-                {idiom.meaning}
-                {idiom.example && <span style={exampleStyle}>{idiom.example}</span>}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+<table style={{ width: '100%', borderCollapse: 'collapse' }}>
+  <thead>
+    <tr>
+      <th style={cellStyle}>Expression</th>
+      <th style={cellStyle}>Meaning / Context</th>
+      <th style={cellStyle}>Japanese</th>
+    </tr>
+  </thead>
+  <tbody>
+    {idioms.map((idiom, i) => (
+      <tr key={i}>
+        <td style={cellStyle}>{idiom.phrase}</td>
+        <td style={cellStyle}>
+          {idiom.meaning}
+          {idiom.example && <span style={exampleStyle}>{idiom.example}</span>}
+        </td>
+        <td style={cellStyle}>{idiom.translation}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
     </div>
   );
 }

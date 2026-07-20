@@ -282,87 +282,107 @@ const bookContent = {
     }
   ],
   "idioms": [
-    {
-      "phrase": "keep on top of the orders",
-      "meaning": "To stay organized and not fall behind with tasks"
-    },
-    {
-      "phrase": "right away",
-      "meaning": "Immediately, without delay"
-    },
-    {
-      "phrase": "I'll be with you in a moment",
-      "meaning": "A polite way of saying 'wait a little, I'll help you soon.'"
-    },
-    {
-      "phrase": "her stomach was in a knot",
-      "meaning": "Feeling very nervous or anxious"
-    },
-    {
-      "phrase": "her face turned white",
-      "meaning": "Became very pale from shock or fear"
-    },
-    {
-      "phrase": "my life is over",
-      "meaning": "Exaggerated expression meaning a situation is very bad or hopeless"
-    },
-    {
-      "phrase": "this kind of mistake usually calls for seven",
-      "meaning": "This situation demands/requires a specific response"
-    },
-    {
-      "phrase": "I'm cutting back",
-      "meaning": "Reducing the amount of something"
-    },
-    {
-      "phrase": "honesty is always the best way to solve problems",
-      "meaning": "An expression of the idiom 'honesty is the best policy.'"
-    },
-    {
-      "phrase": "getting along",
-      "meaning": "Maintaining harmonious relationships with others"
-    },
-    {
-      "phrase": "something moved in the garbage",
-      "meaning": "Humorous exaggeration about a very messy room"
-    },
-    {
-      "phrase": "you can't run from this",
-      "meaning": "You must face the problem; you cannot avoid it"
-    },
-    {
-      "phrase": "called in sick",
-      "meaning": "To phone in and say you are too ill to come to work"
-    },
-    {
-      "phrase": "don't let one bad customer ruin your day",
-      "meaning": "Don't allow one negative experience to spoil everything"
-    },
-    {
-      "phrase": "fight back",
-      "meaning": "To argue or retaliate against someone"
-    },
-    {
-      "phrase": "don't last long here",
-      "meaning": "They won't keep their job; they'll be fired or quit soon"
-    },
-    {
-      "phrase": "watch over you",
-      "meaning": "To look after or keep an eye on someone"
-    },
-    {
-      "phrase": "it only takes one second",
-      "meaning": "Used to emphasize how quick and easy something is"
-    },
-    {
-      "phrase": "fitting all of this together is like making a jigsaw puzzle with broken pieces",
-      "meaning": "A metaphor for trying to make sense of something very confusing"
-    },
-    {
-      "phrase": "you're going to be just fine",
-      "meaning": "A reassuring expression that everything will work out well"
-    }
-  ],
+  {
+    "phrase": "keep on top of the orders",
+    "meaning": "To stay organized and not fall behind with tasks",
+    "translation": "注文をきちんと管理する"
+  },
+  {
+    "phrase": "right away",
+    "meaning": "Immediately, without delay",
+    "translation": "すぐに、直ちに"
+  },
+  {
+    "phrase": "I'll be with you in a moment",
+    "meaning": "A polite way of saying 'wait a little, I'll help you soon.'",
+    "translation": "少々お待ちください（すぐに参ります）"
+  },
+  {
+    "phrase": "her stomach was in a knot",
+    "meaning": "Feeling very nervous or anxious",
+    "translation": "胃がキリキリするほど緊張した"
+  },
+  {
+    "phrase": "her face turned white",
+    "meaning": "Became very pale from shock or fear",
+    "translation": "顔が真っ青になった"
+  },
+  {
+    "phrase": "my life is over",
+    "meaning": "Exaggerated expression meaning a situation is very bad or hopeless",
+    "translation": "もう人生終わりだ（大げさな表現）"
+  },
+  {
+    "phrase": "this kind of mistake usually calls for seven",
+    "meaning": "This situation demands/requires a specific response",
+    "translation": "この種のミスには特別な対応が必要だ"
+  },
+  {
+    "phrase": "I'm cutting back",
+    "meaning": "Reducing the amount of something",
+    "translation": "量を減らしている、控えている"
+  },
+  {
+    "phrase": "honesty is always the best way to solve problems",
+    "meaning": "An expression of the idiom 'honesty is the best policy.'",
+    "translation": "正直が一番の解決策だ（正直は最善の策）"
+  },
+  {
+    "phrase": "getting along",
+    "meaning": "Maintaining harmonious relationships with others",
+    "translation": "うまくやっていく、仲良くする"
+  },
+  {
+    "phrase": "something moved in the garbage",
+    "meaning": "Humorous exaggeration about a very messy room",
+    "translation": "ゴミの中で何かが動いた（散らかった部屋の誇張表現）"
+  },
+  {
+    "phrase": "you can't run from this",
+    "meaning": "You must face the problem; you cannot avoid it",
+    "translation": "これから逃げることはできない"
+  },
+  {
+    "phrase": "called in sick",
+    "meaning": "To phone in and say you are too ill to come to work",
+    "translation": "病欠の連絡をした"
+  },
+  {
+    "phrase": "don't let one bad customer ruin your day",
+    "meaning": "Don't allow one negative experience to spoil everything",
+    "translation": "一人の嫌な客のせいで一日を台無しにしないで"
+  },
+  {
+    "phrase": "fight back",
+    "meaning": "To argue or retaliate against someone",
+    "translation": "言い返す、反撃する"
+  },
+  {
+    "phrase": "don't last long here",
+    "meaning": "They won't keep their job; they'll be fired or quit soon",
+    "translation": "ここでは長続きしない（すぐ辞めることになる）"
+  },
+  {
+    "phrase": "watch over you",
+    "meaning": "To look after or keep an eye on someone",
+    "translation": "あなたを見守る"
+  },
+  {
+    "phrase": "it only takes one second",
+    "meaning": "Used to emphasize how quick and easy something is",
+    "translation": "ほんの一瞬でできる"
+  },
+  {
+    "phrase": "fitting all of this together is like making a jigsaw puzzle with broken pieces",
+    "meaning": "A metaphor for trying to make sense of something very confusing",
+    "translation": "これをつなぎ合わせるのは、壊れたピースでジグソーパズルを作るようなものだ"
+  },
+  {
+    "phrase": "you're going to be just fine",
+    "meaning": "A reassuring expression that everything will work out well",
+    "translation": "きっと大丈夫だよ"
+  }
+],
   "workbook": {
     "wordBank": [
       "keep on top of",
