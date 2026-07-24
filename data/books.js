@@ -389,6 +389,19 @@ coverImage: "/covers/et-08.png",
 coverImage: "/covers/et-09.png",
     amazonUrl: "",
   },
+  {
+    slug: "et-10-how-not-to-be-a-gentleman-the-onsen-trip-part-2",
+    catalog: "everydayTogether",
+    number: 10,
+    title: "How Not to Be a Gentleman: The Onsen Trip, Part 2",
+    description:
+      "The friends spend the next day at the onsen, enjoying the food, hiking, and relaxing. However, little things keep getting in the way, and Takumi almost makes a terrible mistake.",
+    culturalFocus: "Onsen culture; making traditional sweets; social etiquette in shared spaces..",
+    wordCount: "~3,000 words",
+    status: "published",
+coverImage: "/covers/et-10.png",
+    amazonUrl: "",
+  },
   // ---------------------------------------------------------------------
   // SHINJI
   // ---------------------------------------------------------------------
