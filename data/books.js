@@ -450,7 +450,7 @@ coverImage: "/covers/shinji-01.png",
     number: 1,
     title: "Code For Disaster: Murder at the Shujing",
     description:
-      "All Bobby wanted to do was clean the windows at the Shujing, get a bonus and go to Motley Crue concert. Now he's got a computer code running around in his head, he's wanted for questioning in a murder, and someone's trying to kill him.",
+      "All Bobby wanted to do was clean the windows at the Shujing, get a bonus and go to a Motley Crue concert. Now he's got a computer code running around in his head, he's wanted for questioning in a murder, and someone's trying to kill him.",
     status: "published",
     coverImage: "/covers/murder-at-the-shujing.png",
     amazonUrl: "",
