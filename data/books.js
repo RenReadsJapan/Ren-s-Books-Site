@@ -293,7 +293,7 @@ coverImage: "/covers/ren-20.png",
     wordCount: "~3,000 words",
     status: "published",
 coverImage: "/covers/et-01.png",
-    amazonUrl: "",
+    amazonUrl: "https://www.amazon.co.jp/-/en/dp/B0HBRH2BQG/ref=sr_1_1?crid=30HQM7MMPVLTN&dib=eyJ2IjoiMSJ9._5iQynWV0Kmjc_u_m9C0CmCWfOXBBEkKuHxKmc6uuJfGjHj071QN20LucGBJIEps.6cWGGDwzlN1resgFxE8BXSPtsRCZpM4c4XKmSj_97Mo&dib_tag=se&keywords=Real+World+English+Readers&qid=1785192617&sprefix=real+world+english+readers%2Caps%2C171&sr=8-1",
   },
   {
     slug: "et-02-just-say-no-to-overtime",
