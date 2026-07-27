@@ -23,10 +23,11 @@ export default async function BookPage({ params }) {
   if (!book) notFound();
  
   const catalog = Object.values(catalogs).find(
-    (c) =>
-      c.slug === book.catalog ||
-      (book.catalog === "everydayTogether" && c.slug === "everyday-together")
-  );
+  (c) =>
+    c.slug === book.catalog ||
+    (book.catalog === "everydayTogether" && c.slug === "everyday-together") ||
+    (book.catalog === "otherWorks" && c.slug === "other-works")
+);
   const accent = accentOf(catalog.accent);
   const catalogNumber = `${catalog.catalogCode}-${String(book.number).padStart(2, "0")}`;
  
