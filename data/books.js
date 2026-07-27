@@ -402,6 +402,20 @@ coverImage: "/covers/et-09.png",
 coverImage: "/covers/et-10.png",
     amazonUrl: "",
   },
+  {
+    slug: "et-11-yui's-bakery-or-bust",
+    catalog: "everydayTogether",
+    number: 11,
+    title: "Yui's Bakery or Bust",
+    description:
+      "Yui decides to open her own bakery, but faces numerous challenges along the way. Will her dream become a reality, or will she have to settle for a more conventional career?",
+    culturalFocus: "Entrepreneurship in Japan; the role of family support in pursuing dreams; the importance of perseverance.",
+    wordCount: "~3,200 words",
+    status: "published",
+coverImage: "/covers/et-11.png",
+    amazonUrl: "",
+  },
+
   // ---------------------------------------------------------------------
   // SHINJI
   // ---------------------------------------------------------------------
