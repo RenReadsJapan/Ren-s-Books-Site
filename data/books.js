@@ -37,6 +37,16 @@ export const catalogs = {
     accent: "shinji",
     catalogCode: "SHJ",
   },
+  otherWorks: {
+    slug: "other-works",
+    name: "Other Works",
+    tagline: "Standalone stories and one-off fiction",
+    level: "Varies",
+    description:
+      "A collection of standalone novels and short stories.",
+    accent: "otherWorks",
+    catalogCode: "OW",
+  },
 };
  
 export const books = [
@@ -425,11 +435,25 @@ coverImage: "/covers/et-11.png",
     number: 1,
     title: "Shinji Inherits a Ghost House",
     description:
-      "The first book in the Shinji series. More details coming soon.",
+      "Shinji moves from Canada into his grandmother's house in the Mie countryside and descovers it's haunted.",
     status: "published",
 coverImage: "/covers/shinji-01.png",
     amazonUrl: "https://www.royalroad.com/fiction/160052/shinji-inherits-a-ghost-house?utm_source=home&utm_medium=reading-history",
     linkLabel: "Read on Royal Road",
+  },
+  // ---------------------------------------------------------------------
+  // OTHER WORKS
+  // ---------------------------------------------------------------------
+  {
+    slug: "murder-at-the-shujing",
+    catalog: "otherWorks",
+    number: 1,
+    title: "Code For Disaster: Murder at the Shujing",
+    description:
+      "All Bobby wanted to do was clean the windows at the Shujing, get a bonus and go to Motley Crue concert. Now he's got a computer code running around in his head, he's wanted for questioning in a murder, and someone's trying to kill him.",
+    status: "published",
+    coverImage: "/covers/murder-at-the-shujing.png",
+    amazonUrl: "",
   },
 ];
  

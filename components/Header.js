@@ -4,6 +4,7 @@ const navItems = [
   { href: "/ren", label: "Ren English Readers" },
   { href: "/everyday-together", label: "Everyday Together" },
   { href: "/shinji", label: "Shinji" },
+  { href: "/other-works", label: "Other Works" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];

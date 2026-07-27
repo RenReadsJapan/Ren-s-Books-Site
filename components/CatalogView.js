@@ -4,8 +4,12 @@ import { getBooksForCatalog, getCollectionsForCatalog } from "@/data/books";
 import { accentOf } from "@/lib/accent";
 
 export default function CatalogView({ catalog }) {
-  const catalogKey =
-    catalog.slug === "everyday-together" ? "everydayTogether" : catalog.slug;
+   const catalogKey =
+  catalog.slug === "everyday-together"
+    ? "everydayTogether"
+    : catalog.slug === "other-works"
+    ? "otherWorks"
+    : catalog.slug;
   const books = getBooksForCatalog(catalogKey);
   const collections = getCollectionsForCatalog(catalogKey);
   const accent = accentOf(catalog.accent);
