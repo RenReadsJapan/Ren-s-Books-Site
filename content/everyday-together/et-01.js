@@ -60,7 +60,7 @@ const bookContent = {
     "\"I am dying, Dai-chan. My life is over,\" Yui said. She stepped out of the convenience store with a small bag. She pulled out an onigiri and unwrapped it. \"Look what I did!\" She shoved her unlocked phone to Kaoru and bit the onigiri. \"I have to quit my job!\"",
     "\"Don't talk with your mouth full,\" said Kaoru. She looked at the chat message and shook her head.",
     "\"What did Yui do?\" asked Takumi.",
-    "Kaoru gave her the phone, and Takumi whistled. \"This is bad.\" He showed it to Daichi.",
+    "Kaoru gave him the phone, and Takumi whistled. \"This is bad.\" He showed it to Daichi.",
     "\"Wow! I'm surprised you're only eating one onigiri. This kind of mistake usually calls for seven,\" said Daichi.",
     "\"I'm cutting back,\" Yui said and pulled out a second onigiri. \"Besides, it's late.\"",
     "\"Just tell your boss the truth,\" said Takumi. \"She's working you too hard.\"",
