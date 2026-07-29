@@ -5,6 +5,7 @@ const bookContent = {
   "title": "The Wrong LINE Message",
   "series": "Everyday Together",
   "level": "A2",
+  audioSrc: '/audio/et-01-ch1.mp3',
   "story": [
     "The rain splashed down outside. The door to the café opened with a jingle, and three more customers walked in. They waved to Yui and sat down at an empty table.",
     "\"I'll be with you in a moment,\" Yui said, waving back.",

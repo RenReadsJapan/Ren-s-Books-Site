@@ -44,6 +44,29 @@ function StoryTab({ story }) {
   );
 }
 
+// Renders the audio player itself. This component is always mounted
+// (see ReadOnline below) so the <audio> element never unmounts when
+// switching tabs — playback keeps going even when the Story tab is
+// showing. Only its wrapper's visibility is toggled.
+function ListenTab({ audioSrc, title }) {
+  return (
+    <div style={{ maxWidth: '65ch', margin: '0 auto' }}>
+      <h3 style={{ marginBottom: '0.5em' }}>Listen Along</h3>
+      <p style={{ color: 'var(--paper-text-soft, #999)', marginBottom: '1.2em' }}>
+        Play the audio here, then switch to the Story tab to read along —
+        it keeps playing in the background.
+      </p>
+      <audio
+        controls
+        src={audioSrc}
+        style={{ width: '100%' }}
+      >
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  );
+}
+
 function VocabularyTab({ vocabulary, idioms }) {
   const cellStyle = {
     padding: '0.6em 0.8em',
@@ -221,9 +244,14 @@ function WorkbookTab({ workbook }) {
   );
 }
 
-const TABS = ['Story', 'Vocabulary', 'Workbook'];
-
 export default function ReadOnline({ content }) {
+  // Only show the Listen tab if this book actually has audio yet.
+  // Books without an audioSrc (e.g. Ren titles before Sept 2026,
+  // or ET books not yet recorded) just won't show the tab.
+  const hasAudio = Boolean(content.audioSrc);
+
+  const TABS = ['Story', ...(hasAudio ? ['Listen'] : []), 'Vocabulary', 'Workbook'];
+
   const [tab, setTab] = useState('Story');
 
   return (
@@ -265,7 +293,18 @@ export default function ReadOnline({ content }) {
         ))}
       </div>
 
-      {tab === 'Story' && <StoryTab story={content.story} />}
+      <div style={{ display: tab === 'Story' ? 'block' : 'none' }}>
+        <StoryTab story={content.story} />
+      </div>
+
+      {/* Always mounted (when audio exists) so playback survives tab
+          switches — only its visibility toggles, never its existence. */}
+      {hasAudio && (
+        <div style={{ display: tab === 'Listen' ? 'block' : 'none' }}>
+          <ListenTab audioSrc={content.audioSrc} title={content.title} />
+        </div>
+      )}
+
       {tab === 'Vocabulary' && (
         <VocabularyTab vocabulary={content.vocabulary} idioms={content.idioms} />
       )}
