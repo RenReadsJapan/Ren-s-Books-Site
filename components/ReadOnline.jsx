@@ -67,7 +67,7 @@ function ListenTab({ audioSrc, title }) {
   );
 }
 
-function VocabularyTab({ vocabulary, idioms }) {
+function VocabularyTab({ vocabulary, idioms, culturalNotes }) {
   const cellStyle = {
     padding: '0.6em 0.8em',
     borderBottom: '1px solid var(--paper-border, #e5e0d5)',
@@ -80,10 +80,19 @@ function VocabularyTab({ vocabulary, idioms }) {
     color: 'var(--paper-text-soft, #999)',
     marginTop: '0.2em',
   };
+  const hasIdioms = idioms && idioms.length > 0;
+  const hasCulturalNotes = culturalNotes && culturalNotes.length > 0;
+
   return (
     <div>
       <h3 style={{ marginBottom: '0.5em' }}>Vocabulary</h3>
-      <table style={{ width: '100%', borderCollapse: 'collapse', marginBottom: '2.5em' }}>
+      <table
+        style={{
+          width: '100%',
+          borderCollapse: 'collapse',
+          marginBottom: hasIdioms || hasCulturalNotes ? '2.5em' : 0,
+        }}
+      >
         <thead>
           <tr>
             <th style={cellStyle}>Word</th>
@@ -106,28 +115,56 @@ function VocabularyTab({ vocabulary, idioms }) {
         </tbody>
       </table>
 
-      <h3 style={{ marginBottom: '0.5em' }}>Idiomatic Expressions</h3>
-<table style={{ width: '100%', borderCollapse: 'collapse' }}>
-  <thead>
-    <tr>
-      <th style={cellStyle}>Expression</th>
-      <th style={cellStyle}>Meaning / Context</th>
-      <th style={cellStyle}>Japanese</th>
-    </tr>
-  </thead>
-  <tbody>
-    {idioms.map((idiom, i) => (
-      <tr key={i}>
-        <td style={cellStyle}>{idiom.phrase}</td>
-        <td style={cellStyle}>
-          {idiom.meaning}
-          {idiom.example && <span style={exampleStyle}>{idiom.example}</span>}
-        </td>
-        <td style={cellStyle}>{idiom.translation}</td>
-      </tr>
-    ))}
-  </tbody>
-</table>
+      {/* Idiomatic Expressions — only shown for books that actually have
+          idioms (e.g. Everyday Together). Ren books don't use this. */}
+      {hasIdioms && (
+        <>
+          <h3 style={{ marginBottom: '0.5em' }}>Idiomatic Expressions</h3>
+          <table
+            style={{
+              width: '100%',
+              borderCollapse: 'collapse',
+              marginBottom: hasCulturalNotes ? '2.5em' : 0,
+            }}
+          >
+            <thead>
+              <tr>
+                <th style={cellStyle}>Expression</th>
+                <th style={cellStyle}>Meaning / Context</th>
+                <th style={cellStyle}>Japanese</th>
+              </tr>
+            </thead>
+            <tbody>
+              {idioms.map((idiom, i) => (
+                <tr key={i}>
+                  <td style={cellStyle}>{idiom.phrase}</td>
+                  <td style={cellStyle}>
+                    {idiom.meaning}
+                    {idiom.example && <span style={exampleStyle}>{idiom.example}</span>}
+                  </td>
+                  <td style={cellStyle}>{idiom.translation}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </>
+      )}
+
+      {/* Cultural Notes — occasional, separate from vocabulary. Used by
+          Ren books; only rendered when a book actually provides some. */}
+      {hasCulturalNotes && (
+        <>
+          <h3 style={{ marginBottom: '0.5em' }}>Cultural Notes</h3>
+          {culturalNotes.map((note, i) => (
+            <div key={i} style={{ marginBottom: '1.2em' }}>
+              {note.title && (
+                <p style={{ fontWeight: 'bold', marginBottom: '0.3em' }}>{note.title}</p>
+              )}
+              <p style={{ lineHeight: 1.6 }}>{note.text}</p>
+            </div>
+          ))}
+        </>
+      )}
     </div>
   );
 }
@@ -179,25 +216,77 @@ function WorkbookTab({ workbook }) {
         ))}
       </ol>
 
-      <h3>C. Write Your Own Sentence</h3>
-      {workbook.writeYourOwn.map((item, i) => (
-        <div key={i} style={{ marginBottom: '1.5em' }}>
-          <p style={{ marginBottom: '0.3em' }}>
-            <strong>&ldquo;{item.phrase}&rdquo;</strong> &mdash; {item.meaning}
-          </p>
-          <p style={{ fontStyle: 'italic', marginBottom: '0.4em' }}>{item.prompt}</p>
-          <textarea
-            rows={2}
-            style={{
-              width: '100%',
-              fontFamily: 'inherit',
-              fontSize: 'inherit',
-              border: '1px solid var(--paper-border, #e5e0d5)',
-              padding: '0.5em',
-            }}
-          />
-        </div>
-      ))}
+      {workbook.writeYourOwn && workbook.writeYourOwn.length > 0 && (
+        <>
+          <h3>C. Write Your Own Sentence</h3>
+          {workbook.writeYourOwn.map((item, i) => (
+            <div key={i} style={{ marginBottom: '1.5em' }}>
+              <p style={{ marginBottom: '0.3em' }}>
+                <strong>&ldquo;{item.phrase}&rdquo;</strong> &mdash; {item.meaning}
+              </p>
+              <p style={{ fontStyle: 'italic', marginBottom: '0.4em' }}>{item.prompt}</p>
+              <textarea
+                rows={2}
+                style={{
+                  width: '100%',
+                  fontFamily: 'inherit',
+                  fontSize: 'inherit',
+                  border: '1px solid var(--paper-border, #e5e0d5)',
+                  padding: '0.5em',
+                }}
+              />
+            </div>
+          ))}
+        </>
+      )}
+
+      {/* True/False — optional section, only present for books whose
+          workbook includes it (e.g. Ren titles). */}
+      {workbook.trueFalse && workbook.trueFalse.length > 0 && (
+        <>
+          <h3>D. True or False</h3>
+          <ol style={{ marginBottom: '2em' }}>
+            {workbook.trueFalse.map((tf, i) => (
+              <li key={i} style={{ marginBottom: '0.8em' }}>
+                {tf.statement}
+                <div style={{ marginTop: '0.3em' }}>
+                  <label style={{ marginRight: '1.5em' }}>
+                    <input type="radio" name={`tf-${i}`} style={{ marginRight: '0.5em' }} />
+                    True
+                  </label>
+                  <label>
+                    <input type="radio" name={`tf-${i}`} style={{ marginRight: '0.5em' }} />
+                    False
+                  </label>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
+
+      {/* Short Answer — optional section, only present for books whose
+          workbook includes it (e.g. Ren titles). */}
+      {workbook.shortAnswer && workbook.shortAnswer.length > 0 && (
+        <>
+          <h3>E. Short Answer</h3>
+          {workbook.shortAnswer.map((item, i) => (
+            <div key={i} style={{ marginBottom: '1.5em' }}>
+              <p style={{ marginBottom: '0.4em' }}>{item.question}</p>
+              <textarea
+                rows={3}
+                style={{
+                  width: '100%',
+                  fontFamily: 'inherit',
+                  fontSize: 'inherit',
+                  border: '1px solid var(--paper-border, #e5e0d5)',
+                  padding: '0.5em',
+                }}
+              />
+            </div>
+          ))}
+        </>
+      )}
 
       <button
         onClick={() => setShowAnswers((s) => !s)}
@@ -231,13 +320,40 @@ function WorkbookTab({ workbook }) {
     </ol>
 
     <h4 style={{ marginBottom: '0.6em', color: '#fff' }}>Section B — Multiple Choice</h4>
-    <ol style={{ color: '#f0f0f0' }}>
+    <ol style={{ color: '#f0f0f0', marginBottom: workbook.trueFalse || workbook.shortAnswer ? '1.5em' : 0 }}>
       {workbook.multipleChoice.map((mc, i) => (
         <li key={i} style={{ marginBottom: '0.3em' }}>
           {String.fromCharCode(97 + mc.answer)}
         </li>
       ))}
     </ol>
+
+    {workbook.trueFalse && workbook.trueFalse.length > 0 && (
+      <>
+        <h4 style={{ marginBottom: '0.6em', color: '#fff' }}>Section D — True or False</h4>
+        <ol style={{ color: '#f0f0f0', marginBottom: workbook.shortAnswer ? '1.5em' : 0 }}>
+          {workbook.trueFalse.map((tf, i) => (
+            <li key={i} style={{ marginBottom: '0.3em' }}>
+              {tf.answer ? 'TRUE' : 'FALSE'}
+              {tf.note && <span style={{ color: '#bbb' }}> &mdash; {tf.note}</span>}
+            </li>
+          ))}
+        </ol>
+      </>
+    )}
+
+    {workbook.shortAnswer && workbook.shortAnswer.length > 0 && (
+      <>
+        <h4 style={{ marginBottom: '0.6em', color: '#fff' }}>Section E — Short Answer (sample answers)</h4>
+        <ol style={{ color: '#f0f0f0' }}>
+          {workbook.shortAnswer.map((item, i) => (
+            <li key={i} style={{ marginBottom: '0.5em' }}>
+              {item.sampleAnswer}
+            </li>
+          ))}
+        </ol>
+      </>
+    )}
   </div>
 )}
     </div>
@@ -306,7 +422,11 @@ export default function ReadOnline({ content }) {
       )}
 
       {tab === 'Vocabulary' && (
-        <VocabularyTab vocabulary={content.vocabulary} idioms={content.idioms} />
+        <VocabularyTab
+          vocabulary={content.vocabulary}
+          idioms={content.idioms}
+          culturalNotes={content.culturalNotes}
+        />
       )}
       {tab === 'Workbook' && <WorkbookTab workbook={content.workbook} />}
     </div>
