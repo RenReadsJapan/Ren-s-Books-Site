@@ -66,6 +66,17 @@ export default function CollectionCard({ collection, catalog }) {
                 Buy on Amazon.com
               </a>
             )}
+            {collection.amazonUrlCA && (
+              <a
+                href={collection.amazonUrlCA}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block self-start font-mono text-[11px] uppercase tracking-[0.14em] px-5 py-2.5 rounded-sm border"
+                style={{ borderColor: "var(--accent-gold)", color: "var(--accent-gold)" }}
+              >
+                Buy on Amazon.ca
+              </a>
+            )}
           </div>
         ) : (
           <span

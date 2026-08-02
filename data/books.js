@@ -66,6 +66,7 @@ export const books = [
 coverImage: "/covers/ren-01.png",
     amazonUrl: "https://www.amazon.co.jp/-/en/gp/product/B0GZB7SBY8?ref_=dbs_m_nmg_rwt_calw_tkin_0&storeType=ebooks",
     amazonUrlUS: "https://www.amazon.com/gp/product/B0GZB7SBY8?ref_=dbs_m_mng_rwt_calw_tkin_0&storeType=ebooks&qid=1783923574&sr=8-4",
+    amazonUrlCA: "https://www.amazon.ca/Haunted-Shrine-Ren-English-Readers/dp/B0HC7DBK3H/ref=sr_1_3?crid=3A2FVVVK1B6QS&dib=eyJ2IjoiMSJ9.7lkML_F7ga4BYmXM8FK4fz7Z04lkgBSYNJomAjbCeWy6hdJfeXzp-fUdSZMeYDr5SdmdmCeL0irjJH1JsneGj83y7fB4bdFyRGhTGANGNY4dM5GEDsxO60syvo7hE6_J5NZOb4tQe9nKzD8De_H5oA.MwvFzCXBbFNgVjS_93bsMxv033GwrK__HnaXPY3qs_Y&dib_tag=se&keywords=ren+english+readers&qid=1785714013&sprefix=%2Caps%2C247&sr=8-3",
   },
   {
     slug: "ren-02-riding-the-train",
@@ -491,7 +492,8 @@ export const collections = [
       "Books 1–4, bundled together in one paperback — the opening arc of the Ren series, from the first shrine visit through festival season.",
     coverImage: "/covers/ren-collected-01.png",
     amazonUrl: "https://www.amazon.co.jp/-/en/Ren-English-Readers-Books-1-4/dp/B0H2J3MK13/ref=sr_1_2?crid=3TU97KBWT6YD8&dib=eyJ2IjoiMSJ9.7lkML_F7ga4BYmXM8FK4f7DpQr-4haP5L4k5mbrkdk55MbXS-P-VwlhYfZ4_inxe4AriDbm91VKiL8R0wDlYOA.pvJqhXSMKRFgsRx25YTAFUZI3RsYOsIlH66dmKJ9EzM&dib_tag=se&keywords=ren+english+readers&qid=1783926064&sprefix=%2Caps%2C286&sr=8-2",
-amazonUrlUS: "https://www.amazon.com/Ren-English-Readers-Books-1-4/dp/B0H2J3MK13/ref=sr_1_1?crid=4L8RD9M0AW5I&dib=eyJ2IjoiMSJ9.Bb_F94g8lZBOLFcUwSGpc_Wo74TCMdllaKArqrZfVizy7NdkTJtNOHIYib39_t0SCxalAPoIN53GaQUJ-P1RUuMgvVXXgWnYIBdqwmw07ZaYRih2uWPz2ASGvGjTCpjBd-pSZJq6Yv1DA-dCTC2EHCRVzIO-FNprn1EXY7D5yiih_5FdMXlSj1nkbJyWaiyT-V-TZO99mhM_Usq2JJ7rtY0p20ub-6f-zbxJ7Go6b7A.su_oQa8wYjEYcV4fyYD7Agg4AODTJV8iOBn-udWFWFU&dib_tag=se&keywords=raymond+paquette&qid=1783927331&sprefix=%2Caps%2C436&sr=8-1",
+    amazonUrlUS: "https://www.amazon.com/Ren-English-Readers-Books-1-4/dp/B0H2J3MK13/ref=sr_1_1?crid=4L8RD9M0AW5I&dib=eyJ2IjoiMSJ9.Bb_F94g8lZBOLFcUwSGpc_Wo74TCMdllaKArqrZfVizy7NdkTJtNOHIYib39_t0SCxalAPoIN53GaQUJ-P1RUuMgvVXXgWnYIBdqwmw07ZaYRih2uWPz2ASGvGjTCpjBd-pSZJq6Yv1DA-dCTC2EHCRVzIO-FNprn1EXY7D5yiih_5FdMXlSj1nkbJyWaiyT-V-TZO99mhM_Usq2JJ7rtY0p20ub-6f-zbxJ7Go6b7A.su_oQa8wYjEYcV4fyYD7Agg4AODTJV8iOBn-udWFWFU&dib_tag=se&keywords=raymond+paquette&qid=1783927331&sprefix=%2Caps%2C436&sr=8-1",
+    amazonUrlCA: "https://www.amazon.ca/Ren-English-Readers-Books-1-4/dp/B0H2J3MK13/ref=sr_1_2?crid=3A2FVVVK1B6QS&dib=eyJ2IjoiMSJ9.7lkML_F7ga4BYmXM8FK4fz7Z04lkgBSYNJomAjbCeWy6hdJfeXzp-fUdSZMeYDr5SdmdmCeL0irjJH1JsneGj83y7fB4bdFyRGhTGANGNY4dM5GEDsxO60syvo7hE6_J5NZOb4tQe9nKzD8De_H5oA.MwvFzCXBbFNgVjS_93bsMxv033GwrK__HnaXPY3qs_Y&dib_tag=se&keywords=ren+english+readers&qid=1785712042&sprefix=%2Caps%2C247&sr=8-2",
 
   },
   {

@@ -108,44 +108,60 @@ export default async function BookPage({ params }) {
         </div>
       )}
  
-      <div className="flex flex-wrap gap-3">
-        {book.amazonUrl ? (
-          <a
-            href={book.amazonUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block font-mono text-xs uppercase tracking-[0.14em] px-6 py-3 rounded-sm"
-            style={{ background: accent.strong, color: "var(--bg-ink)" }}
-          >
-{book.linkLabel ? book.linkLabel : book.amazonUrlUS ? "Buy on Amazon.co.jp" : "Buy on Amazon"}          </a>
-        ) : (
-          <p
-            className="text-sm italic"
-            style={{ color: "var(--paper-text-soft)" }}
-          >
-            Purchase link coming soon.
-          </p>
+      <div className="flex flex-col gap-4">
+        {bookContent[book.slug] && (
+          <div>
+            <Link
+              href={`/books/${book.slug}/read`}
+              className="inline-block font-mono text-xs uppercase tracking-[0.14em] px-6 py-3 rounded-sm"
+              style={{ backgroundColor: accent.strong, color: '#fff' }}
+            >
+              Read Online
+            </Link>
+          </div>
         )}
-        {book.amazonUrlUS && (
-          <a
-            href={book.amazonUrlUS}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block font-mono text-xs uppercase tracking-[0.14em] px-6 py-3 rounded-sm border"
-            style={{ borderColor: accent.strong, color: accent.strong }}
-          >
-            Buy on Amazon.com
-          </a>
-        )}
-{bookContent[book.slug] && (
-  <Link
-    href={`/books/${book.slug}/read`}
-    className="inline-block font-mono text-xs uppercase tracking-[0.14em] px-6 py-3 rounded-sm"
-    style={{ backgroundColor: accent.strong, color: '#fff' }}
-  >
-    Read Online
-  </Link>
-)}
+
+        <div className="flex flex-wrap gap-3">
+          {book.amazonUrl ? (
+            <a
+              href={book.amazonUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-mono text-xs uppercase tracking-[0.14em] px-6 py-3 rounded-sm"
+              style={{ background: accent.strong, color: "var(--bg-ink)" }}
+            >
+{book.linkLabel ? book.linkLabel : book.amazonUrlUS ? "Buy on Amazon.co.jp" : "Buy on Amazon"}            </a>
+          ) : (
+            <p
+              className="text-sm italic"
+              style={{ color: "var(--paper-text-soft)" }}
+            >
+              Purchase link coming soon.
+            </p>
+          )}
+          {book.amazonUrlUS && (
+            <a
+              href={book.amazonUrlUS}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-mono text-xs uppercase tracking-[0.14em] px-6 py-3 rounded-sm border"
+              style={{ borderColor: accent.strong, color: accent.strong }}
+            >
+              Buy on Amazon.com
+            </a>
+          )}
+          {book.amazonUrlCA && (
+            <a
+              href={book.amazonUrlCA}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-mono text-xs uppercase tracking-[0.14em] px-6 py-3 rounded-sm border"
+              style={{ borderColor: accent.strong, color: accent.strong }}
+            >
+              Buy on Amazon.ca
+            </a>
+          )}
+        </div>
       </div>
  
       <ReviewSection bookSlug={book.slug} accent={accent.strong} />
