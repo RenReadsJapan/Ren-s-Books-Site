@@ -53,10 +53,31 @@ export default function CatalogView({ catalog }) {
 
       <section className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {books.map((book) => (
-            <BookCard key={book.slug} book={book} catalog={catalog} />
-          ))}
+          {books
+            .filter((book) => book.level !== "B1")
+            .map((book) => (
+              <BookCard key={book.slug} book={book} catalog={catalog} />
+            ))}
         </div>
+
+        {books.some((book) => book.level === "B1") && (
+          <>
+            <div className="mt-16" />
+            <h2
+              className="font-display text-3xl mb-6"
+              style={{ color: "var(--paper-text)" }}
+            >
+              B1 Readers
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {books
+                .filter((book) => book.level === "B1")
+                .map((book) => (
+                  <BookCard key={book.slug} book={book} catalog={catalog} />
+                ))}
+            </div>
+          </>
+        )}
       </section>
 
       {collections.length > 0 && (
