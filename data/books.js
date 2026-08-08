@@ -443,6 +443,19 @@ coverImage: "/covers/et-10.png",
 coverImage: "/covers/et-11.png",
     amazonUrl: "",
   },
+  {
+    slug: "et-12-the-gym-buffer",
+    catalog: "everydayTogether",
+    number: 12,
+    title: "The Gym Buffer",
+    description:
+      "Daichi decides to join a gym, but can't deal with the pushy Obachans trying to fix him up with the trainer. He gets Takumi to come act as a buffer and exercise in peace.",
+    culturalFocus: "Osaka gym culture; social dynamics; the role of friendship in navagiating social spaces; acceptance of who you are.",
+    wordCount: "~3,300 words",
+    status: "published",
+coverImage: "/covers/et-12.png",
+    amazonUrl: "",
+  },
 
   // ---------------------------------------------------------------------
   // SHINJI
