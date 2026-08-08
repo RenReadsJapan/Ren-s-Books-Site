@@ -4,6 +4,7 @@ const bookContent = {
   "title": "Just Say No to Overtime",
   "series": "Everyday Together",
   "level": "A2",
+  audioSrc: '/audio/et-02-ch1.mp3',
   "story": [
     "\"Hey, Kaoru, do you want to come to our concert on Friday?\" Takumi asked her. \"We're playing at the small Live House in Shinsaibashi.\"",
     "\"Really,\" said Kaoru. \"What kind of music is it?\" she asked.",
@@ -87,7 +88,7 @@ const bookContent = {
     "\"Yes, but they need some extra money to pay for the Live House,\" said Yui. \"Can you help me?\"",
     "\"Takumi asked me, too,\" said Kaoru. She took some of the shirts from the bag. \"What do we do?\"",
     "\"They will start playing in five minutes,\" said Yui. She put on one of the shirts over her outfit. \"Walk in front of the stage and hold up the shirts. They are two thousand yen each.\"",
-    "Kaoru followed Yui. Yui stepped onto the stage and grabbed the mic. 'Out of Batteries' has a great deal for you,\" she said. \"If you go to my lovely assistant here at the front, you get a great T-shirt. The money will help the band, and you'll get an excellent souvenir.\"",
+    "Kaoru followed Yui. Yui stepped onto the stage and grabbed the mic. 'Out of Batteries' has a great deal for you,\" she said. \"If you go to my lovely assistant here at the front, you can get a great T-shirt. The money will help the band, and you'll get an excellent souvenir.\"",
     "Three people stepped forward. \"How much?\" one man asked.",
     "\"Two thousand yen,\" said Yui.",
     "Two men took some money from their pockets and gave it to Kaoru. The third man went back into the crowd.",
@@ -102,7 +103,7 @@ const bookContent = {
     "\"I think so,\" Kaoru said.",
     "The woman nodded and went back into the crowd. Kaoru sold three more T-shirts.",
     "Yui went back onto the stage. \"Thank you, everybody,\" she said.",
-    "Takumi joined Yui on the stage. \"More T-shirts and CD's will be for sale after the show by the front entrance,\" he said.",
+    "Takumi joined Yui on the stage. \"More T-shirts and CDs will be for sale after the show by the front entrance,\" he said.",
     "Back at their table, Kaoru set the half-empty bag down. Yui pushed through the crowd and set a new drink on the table.",
     "\"That was fun,\" Yui said.",
     "\"Yes, it was,\" said Kaoru. She pulled her phone from her pocket.",
@@ -157,7 +158,7 @@ const bookContent = {
     "\"Me too,\" said Kaoru. She opened her computer and smiled.",
     "\"So, what did you do?\" asked Honoka.",
     "\"I went to my friend's concert,\" said Kaoru. \"It was in Shinsaibashi.\"",
-    "\"Cool. Do they have any CD's?\" asked Honoka.",
+    "\"Cool. Do they have any CDs?\" asked Honoka.",
     "Kaoru nodded. \"I'll give you a link later,\" she said.",
     "\"Great!\" said Honoka. She turned back to her computer and started typing.",
     "Kaoru shook her head. After the weekend, she felt great, but it was time to get back to work. Next weekend, Takumi wanted to get together for another English Circle. Maybe she could go."
@@ -215,7 +216,7 @@ const bookContent = {
       "word": "assistant",
       "translation": "アシスタント・助手",
       "partOfSpeech": "noun",
-      "example": "If you go to my lovely assistant here at the front, you get a great T-shirt."
+      "example": "If you go to my lovely assistant here at the front, you can get a great T-shirt."
     },
     {
       "word": "entrance",
