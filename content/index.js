@@ -3,6 +3,7 @@
 
 import et01 from './everyday-together/et-01';
 import et02 from './everyday-together/et-02';
+import et03 from './everyday-together/et-03';
 import murderAtTheShujing from './other-works/murder-at-the-shujing';
 import ren01 from './ren/ren-01';
 import ren02 from './ren/ren-02-riding-the-train';
