@@ -10,6 +10,7 @@ import ren02 from './ren/ren-02-riding-the-train';
 const bookContent = {
   'et-01-the-wrong-line-message': et01, // CHECK: does this match the slug in books.js? Fix if not.
   'et-02-just-say-no-to-overtime': et02,
+  'et-03-the-last-train': et03,
   'murder-at-the-shujing': murderAtTheShujing,
   'ren-01-the-haunted-shrine-visit': ren01,
   'ren-02-riding-the-train': ren02,
