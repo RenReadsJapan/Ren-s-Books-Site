@@ -547,6 +547,23 @@ export const collections = [
     amazonUrlCA: "https://www.amazon.ca/Ren-English-Readers-Books-5-8/dp/B0H82H55GZ/ref=sr_1_1?crid=3A2FVVVK1B6QS&dib=eyJ2IjoiMSJ9.7lkML_F7ga4BYmXM8FK4fz7Z04lkgBSYNJomAjbCeWy6hdJfeXzp-fUdSZMeYDr5SdmdmCeL0irjJH1JsneGj83y7fB4bdFyRGhTGANGNY4dM5GEDsxO60syvo7hE6_J5NZOb4tQe9nKzD8De_H5oA.MwvFzCXBbFNgVjS_93bsMxv033GwrK__HnaXPY3qs_Y&dib_tag=se&keywords=ren+english+readers&qid=1785714013&sprefix=%2Caps%2C247&sr=8-1",
 
   },
+  {
+    slug: "et-collected-01",
+    catalog: "everydayTogether",
+    title: "Everyday Together: Collected Book 1",
+    includes: [
+      "The Wrong LINE Message",
+      "Just Say No to Overtime",
+      "The Last Train",
+      "Cooking Up Trouble",
+    ],
+    description:
+      "Books 1–4, bundled together in one paperback — Yui, Kaoru, Daichi, and Takumi navigate work, friendship, and everyday mishaps in Osaka.",
+    coverImage: "/covers/et-collected-01.png",
+    amazonUrl: "",
+    amazonUrlUS: "",
+    amazonUrlCA: "",
+  },
 ];
 
 export function getCollectionsForCatalog(catalogKey) {
