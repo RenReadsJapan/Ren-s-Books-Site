@@ -562,9 +562,9 @@ export const collections = [
     description:
       "Books 1–4, bundled together in one paperback — Yui, Kaoru, Daichi, and Takumi navigate work, friendship, and everyday mishaps in Osaka.",
     coverImage: "/covers/et-collected-01.png",
-    amazonUrl: "",
-    amazonUrlUS: "",
-    amazonUrlCA: "",
+    amazonUrl: "https://www.amazon.co.jp/dp/B0HDV2S6CY?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.DUSVRySkx59T9dWCAvYnT9aXNjkQ_6X9jQ_20fpK6n51_uwZSZtfNePEIwqOZtWGHadafLPdCcKxAnCu_KzK_h8Jo-zPyPKNZ8m0AEV1wvSPZgw7nWE2SM2WDPsNmC4PaGqa5-g070Wqroq1pIy_wPMEXQSkF_4_1hm9DzjcN5wyeg_UGXpqrGzt3X0im6ug2JsPJQFXgj40bETaCeQ57ip7alCAlHwSLB-byhShEpk.0LkvpMoaPb64_V-IbLFI7CRuCAlJ9yR7tWEIWOWWV2w&dib_tag=AUTHOR",
+    amazonUrlUS: "https://www.amazon.com/dp/B0HDV2S6CY/ref=sr_1_1?crid=27XS76LFNDFIL&dib=eyJ2IjoiMSJ9.1badDoJjiSu_xDxOmGv9iTBQ-VkekAhXKFklbRLQSZA.lG_1PC70hDJlof00sX0tjkibQPIEUhi3qJTM4AWfLQk&dib_tag=se&keywords=Everyday+Together+Collected&qid=1786515296&sprefix=everyday+together+collected%2Caps%2C284&sr=8-1",
+    amazonUrlCA: "https://www.amazon.ca/dp/B0HDV2S6CY/ref=sr_1_4?crid=1608LHYJNW1TV&dib=eyJ2IjoiMSJ9.zvhiwOeR4PJ6JELLz_HRMUoq69dZa3mxeHJP9qu-p-cY4FoXaELvdZAd7PmIUCAHt7pWR4ury_C-2SMZoKueeIwiUOKgrecalA-6JxuicvBaV1fqlpoCrqZ9HPtilUAr90z9Uv90zhmRB6m0BtTOHYpIDGkth-zbxyza5jo4tak3Y2cnB2nbIJFIrU_9y8JHnQsu97v1cnabLnSx9KLIBLQwbrOF8xbeYPM7eOi6NDZLl1uKCZoWwMvqVERAImQ5HYwjzZJEyP6U5Sy9pDfEIrqXuxJVKv3GotonWTUErwI.D96AgoXDxe13uljSCBKIGXxbyWuMakNjSXkQCv2e5sk&dib_tag=se&keywords=Everyday+Together&qid=1786515246&sprefix=everyday+together%2Caps%2C279&sr=8-4",
   },
 ];
 
