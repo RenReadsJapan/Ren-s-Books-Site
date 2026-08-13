@@ -461,6 +461,19 @@ coverImage: "/covers/et-11.png",
 coverImage: "/covers/et-12.png",
     amazonUrl: "",
   },
+  {
+    slug: "et-13-apartment-trouble",
+    catalog: "everydayTogether",
+    number: 13,
+    title: "Apartment Trouble",
+    description:
+      "Takumi's apartment is being checked for asbestos and he has to move out for six weeks. Yui offeres to let him stay at her place, but first he must meet her mother.",
+    culturalFocus: "gift etiquette; Japanese apartment culture; the role of family in social interactions; navigating new living situations.",
+    wordCount: "~3,300 words",
+    status: "published",
+coverImage: "/covers/et-13.png",
+    amazonUrl: "",
+    },
 
   // ---------------------------------------------------------------------
   // SHINJI
