@@ -10,12 +10,12 @@ export default function CollectionCard({ collection, catalog }) {
       style={{ borderLeft: `4px solid var(--accent-gold)` }}
     >
       {collection.coverImage && (
-        <div className="relative w-full sm:w-40 aspect-[3/4] shrink-0 bg-black/10">
+<div className="relative w-full sm:w-64 aspect-[3/4] shrink-0 bg-black/10">
           <Image
             src={collection.coverImage}
             alt={`Cover of ${collection.title}`}
             fill
-            sizes="200px"
+            sizes="320px"
             className="object-cover"
           />
         </div>
