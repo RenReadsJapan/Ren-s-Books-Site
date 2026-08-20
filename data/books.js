@@ -297,6 +297,18 @@ coverImage: "/covers/ren-20.png",
     coverImage: "/covers/ren-b1-01.png",
     amazonUrl: "",
   },
+  {
+    slug: "ren-b1-02-return-to-oni-ga-shima",
+    catalog: "ren",
+    number: 2,
+    level: "B1",
+    title: "Return to Oni-ga-Shima",
+    description:
+      "Ren made a promise to return to Oni-ga-Shima, and now he must keep it. But the island is not what it seems, and the friends are in for a dangerous adventure.",
+    status: "published",
+    coverImage: "/covers/ren-b1-02.png",
+    amazonUrl: "",
+  },
  
   // ---------------------------------------------------------------------
   // EVERYDAY TOGETHER
