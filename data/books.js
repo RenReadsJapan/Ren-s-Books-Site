@@ -489,7 +489,7 @@ coverImage: "/covers/et-13.png",
     amazonUrl: "",
     },
     {
-    slug: "et-14-the english-circle",
+    slug: "et-14-the-english-circle",
     catalog: "everydayTogether",
     number: 14,
     title: "The English Circle",
