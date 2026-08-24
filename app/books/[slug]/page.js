@@ -161,6 +161,17 @@ export default async function BookPage({ params }) {
               Buy on Amazon.ca
             </a>
           )}
+           {book.koboUrl && (
+            <a
+              href={book.koboUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-mono text-xs uppercase tracking-[0.14em] px-6 py-3 rounded-sm border"
+              style={{ borderColor: accent.strong, color: accent.strong }}
+            >
+              Buy on Kobo
+            </a>
+          )}
         </div>
       </div>
  
