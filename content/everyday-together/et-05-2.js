@@ -94,8 +94,8 @@ const bookContent = {
       "After drying herself off, she picked up her pajamas. \"Why did I take the 'Goodnight Kitty' pajamas?\" She shook her head. \"It's so strange having Takumi in my house. He can't do anything to help me.\"",
       "She stepped out of the bathroom. It was quiet. \"Is someone cooking?\" She shuffled into her kitchen. I need to make okayu, she thought.",
       "Takumi was stirring a pot on her stove.",
-      "\"What are you doing? Did you wash your hands first?\" Kaoru raised her voice. \"Where's Daichi?\"",
-      "\"Yes, I did, don't worry. I sent him to get some mugi-cha, vitamin drinks and cough candy,\" Takumi said. \"The medicine is good, but sometimes vitamin C is better.\"",
+      "\"What are you doing?\" Kaoru raised her voice. \"Where's Daichi?\"",
+      "\"I sent him to get some mugi-cha, vitamin drinks and cough candy,\" Takumi said. \"The medicine is good, but sometimes vitamin C is better.\"",
       "Kaoru moved closer to Takumi. \"No. What are you making? Okayu? I don't believe it. You can't cook.\" She looked in the pot.",
       "\"I can make rice porridge. My grandmother taught me.\" Takumi stirred the pot.",
       "Kaoru huffed. \"Don't burn my kitchen down.\"",
@@ -306,8 +306,113 @@ const bookContent = {
           "title": "Okayu: Japan's Classic Sick-Day Food",
           "text": "Okayu (お粥) is a soft rice porridge made by simmering rice in a large amount of water until it becomes thick and easy to digest. It is one of the most common foods served to sick people in Japan, especially those with a fever, cold, or upset stomach. Okayu is often topped with something salty or sour, like umeboshi (pickled plum), to help settle the stomach and add flavor without being too heavy. Because it requires little chewing and is gentle on the digestive system, okayu is also a common first food for babies and a comfort food for anyone feeling unwell. Many Japanese people, like Takumi in the story, learn to make okayu from a parent or grandparent, and recipes are often passed down within families. In the story, Takumi's grandmother taught him to make okayu when he was a sick child in Okinawa, and he passes that same care on to Kaoru."
       }
-  ]
-  // workbook intentionally omitted — same as et-05.js, no separate worksheet for this edition
+  ],
+  "workbook": {
+      "wordBank": [
+          "take it easy",
+          "serves him right",
+          "blurry",
+          "bear",
+          "prescription",
+          "dizzy",
+          "get out of your hair",
+          "admit",
+          "your wish is my command",
+          "even if you paid me",
+          "killing her"
+      ],
+      "fillInBlank": [
+          "Kaoru's computer screen looked ______ right before she collapsed.",
+          "After getting her medicine, Kaoru felt ______ and had to sit down.",
+          "Daichi told Kaoru to ______ and stop trying to do everything herself.",
+          "Yui said Kaoru is a ______ when she is sick.",
+          "When Kaoru heard Daichi was sick, she said, \"______.\"",
+          "It was hard to ______, but Kaoru felt better with Takumi there.",
+          "When Kaoru asked Takumi to turn on the TV, he said, \"______.\"",
+          "Kaoru started coughing so hard that her throat was ______.",
+          "Daichi refused to help Kaoru change, saying he wouldn't do it ______."
+      ],
+      "fillInBlankAnswers": [
+          "blurry",
+          "dizzy",
+          "take it easy",
+          "bear",
+          "serves him right",
+          "admit",
+          "your wish is my command",
+          "killing her",
+          "even if you paid me"
+      ],
+      "multipleChoice": [
+          {
+              "question": "Why does Kaoru go to work even though she is sick?",
+              "options": [
+                  "She wants to make her boss happy.",
+                  "She does not want to cause trouble for her coworkers.",
+                  "She likes going to the office.",
+                  "She forgot she was sick."
+              ],
+              "answer": 1
+          },
+          {
+              "question": "Why does Yui not come inside Kaoru's apartment?",
+              "options": [
+                  "She does not like Kaoru's apartment.",
+                  "She is angry at Kaoru.",
+                  "She has a baking test and does not want to get sick.",
+                  "She is busy with her part-time job."
+              ],
+              "answer": 2
+          },
+          {
+              "question": "How does Takumi know how to make okayu?",
+              "options": [
+                  "He learned it at cooking school.",
+                  "Yui taught him.",
+                  "He watched a video online.",
+                  "His grandmother taught him when he was young."
+              ],
+              "answer": 3
+          },
+          {
+              "question": "Why does Daichi get angry while taking care of Kaoru?",
+              "options": [
+                  "He is tired and wants to go home.",
+                  "Kaoru complains about everything and is very demanding.",
+                  "He does not like Takumi.",
+                  "Kaoru does not say thank you."
+              ],
+              "answer": 1
+          },
+          {
+              "question": "How does Takumi help Kaoru get to the couch when she is too dizzy to walk?",
+              "options": [
+                  "He picks her up and carries her there.",
+                  "He tells her to crawl.",
+                  "He calls Daichi to help her walk.",
+                  "He lets her sit on the floor until she feels better."
+              ],
+              "answer": 0
+          }
+      ],
+      "writeYourOwn": [
+          {
+              "phrase": "take it easy",
+              "meaning": "To relax and not push yourself too hard, especially when unwell or tired. Example: \"Take it easy,\" Daichi said. \"What's the big deal?\"",
+              "prompt": "Write a sentence using \"take it easy.\" Think about a time you told someone to relax or not push themselves too hard."
+          },
+          {
+              "phrase": "serves him right",
+              "meaning": "Used to say that someone deserved something bad that happened to them. Example: Kaoru laughed. \"Serves him right,\" she said.",
+              "prompt": "Write a sentence using \"serves him right.\" Think about a time someone got a result they deserved."
+          },
+          {
+              "phrase": "substitute taxi",
+              "meaning": "In the story, Daichi says some people in Japan use the ambulance as a 'substitute taxi' because it's free.",
+              "prompt": "Daichi mentioned that people use an ambulance as a 'substitute taxi.' Do you think that is true? Write your opinion."
+          }
+      ]
+  }
 };
 
 export default bookContent;
