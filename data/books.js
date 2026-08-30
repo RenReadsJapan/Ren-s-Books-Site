@@ -530,6 +530,18 @@ coverImage: "/covers/shinji-01.png",
     amazonUrl: "https://www.royalroad.com/fiction/160052/shinji-inherits-a-ghost-house?utm_source=home&utm_medium=reading-history",
     linkLabel: "Read on Royal Road",
   },
+  {
+    slug: "shinji-02-shinji-vs-the-ghost-school",
+    catalog: "shinji",
+    number: 2,
+    title: "Shinji vs. The Ghost School",
+    description:
+      "Shinji transfers to a new school and discovers it's also haunted. He must find a way to survive not only the ghosts, but also make some new friends.",
+    status: "published",
+coverImage: "/covers/shinji-02.png",
+    amazonUrl: "https://www.royalroad.com/fiction/160052/shinji-inherits-a-ghost-house?utm_source=home&utm_medium=reading-history",
+    linkLabel: "Read on Royal Road",
+  },
   // ---------------------------------------------------------------------
   // OTHER WORKS
   // ---------------------------------------------------------------------
