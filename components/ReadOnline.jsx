@@ -199,22 +199,26 @@ function WorkbookTab({ workbook }) {
         ))}
       </ol>
 
-      <h3>B. Multiple Choice</h3>
-      <ol style={{ marginBottom: '2em' }}>
-        {workbook.multipleChoice.map((mc, qi) => (
-          <li key={qi} style={{ marginBottom: '1em' }}>
-            {mc.question}
-            <div style={{ marginTop: '0.4em' }}>
-              {mc.options.map((opt, oi) => (
-                <label key={oi} style={{ display: 'block', margin: '0.2em 0' }}>
-                  <input type="radio" name={`mc-${qi}`} style={{ marginRight: '0.5em' }} />
-                  {opt}
-                </label>
-              ))}
-            </div>
-          </li>
-        ))}
-      </ol>
+      {workbook.multipleChoice && workbook.multipleChoice.length > 0 && (
+        <>
+          <h3>B. Multiple Choice</h3>
+          <ol style={{ marginBottom: '2em' }}>
+            {workbook.multipleChoice.map((mc, qi) => (
+              <li key={qi} style={{ marginBottom: '1em' }}>
+                {mc.question}
+                <div style={{ marginTop: '0.4em' }}>
+                  {mc.options.map((opt, oi) => (
+                    <label key={oi} style={{ display: 'block', margin: '0.2em 0' }}>
+                      <input type="radio" name={`mc-${qi}`} style={{ marginRight: '0.5em' }} />
+                      {opt}
+                    </label>
+                  ))}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
 
       {workbook.writeYourOwn && workbook.writeYourOwn.length > 0 && (
         <>
@@ -319,14 +323,18 @@ function WorkbookTab({ workbook }) {
       ))}
     </ol>
 
-    <h4 style={{ marginBottom: '0.6em', color: '#fff' }}>Section B — Multiple Choice</h4>
-    <ol style={{ color: '#f0f0f0', marginBottom: workbook.trueFalse || workbook.shortAnswer ? '1.5em' : 0 }}>
-      {workbook.multipleChoice.map((mc, i) => (
-        <li key={i} style={{ marginBottom: '0.3em' }}>
-          {String.fromCharCode(97 + mc.answer)}
-        </li>
-      ))}
-    </ol>
+        {workbook.multipleChoice && workbook.multipleChoice.length > 0 && (
+      <>
+        <h4 style={{ marginBottom: '0.6em', color: '#fff' }}>Section B — Multiple Choice</h4>
+        <ol style={{ color: '#f0f0f0', marginBottom: workbook.trueFalse || workbook.shortAnswer ? '1.5em' : 0 }}>
+          {workbook.multipleChoice.map((mc, i) => (
+            <li key={i} style={{ marginBottom: '0.3em' }}>
+              {String.fromCharCode(97 + mc.answer)}
+            </li>
+          ))}
+        </ol>
+      </>
+    )}
 
     {workbook.trueFalse && workbook.trueFalse.length > 0 && (
       <>
