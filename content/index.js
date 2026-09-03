@@ -8,6 +8,7 @@ import et04 from './everyday-together/et-04';
 import et05 from './everyday-together/et-05';
 import et052 from './everyday-together/et-05-2';
 import et06 from './everyday-together/et-06';
+import et062 from './everyday-together/et-06-2';
 import murderAtTheShujing from './other-works/murder-at-the-shujing';
 import ren01 from './ren/ren-01';
 import ren02 from './ren/ren-02';
@@ -24,6 +25,7 @@ const bookContent = {
   'et-05-i-hate-taking-care-of-a-sick-person': et05,
   'et-05-2-i-hate-taking-care-of-a-sick-person': et052,
   'et-06-anything-but-work': et06,
+  'et-06-2-anything-but-work': et062,
   'murder-at-the-shujing': murderAtTheShujing,
   'ren-01-the-haunted-shrine-visit': ren01,
   'ren-02-riding-the-train': ren02,
