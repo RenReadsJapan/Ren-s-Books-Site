@@ -528,6 +528,19 @@ coverImage: "/covers/et-13.png",
 coverImage: "/covers/et-14.png",
     amazonUrl: "",
     },
+    {
+    slug: "et-15-festival-flashback",
+    catalog: "everydayTogether",
+    number: 15,
+    title: "Festival Flashback",
+    description:
+      "Yui tries to open a crepe stand, but everything goes wrong. Also, a look back at the events of the previous year, and confronting the fear of the unknown.",
+    culturalFocus: "festival culture; nostalgia; facing fears.",
+    wordCount: "~4,300 words",
+    status: "published",
+coverImage: "/covers/et-15.png",
+    amazonUrl: "",
+    },
 
   // ---------------------------------------------------------------------
   // SHINJI
