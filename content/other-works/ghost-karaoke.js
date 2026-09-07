@@ -1,0 +1,46 @@
+// Auto-generated from Word doc. Edit text directly here if you spot a typo.
+const bookContent = {
+  "slug": "ghost-karaoke",
+  "title": "Ghost Karaoke",
+  "story": [
+    "The karaoke machine flashed its score from my last song. The yellow numbers cut through the smoky haze of the hole-in-the-wall bar near my shrine.",
+    "\"Thirty-six point three! What kind of karaoke score is that, Minako? Your boyfriend dumped you again?\" The old, bald fart slapped where his knee would be, passing through the table, his ghostly tail whipping. \"Come on. We're still waiting for our favourite shrine maiden to hit a hundred, so we can pass on. Your crappy score isn't going to cut it.\"",
+    "\"Zip it, Hideo! A perfect score is a one in a million chance.\" My face turned hot, and I stamped my foot on the stage, smothering my smile. \"Besides, I had a difficult day today. You're always spoiling my stress buster.\"",
+    "\"What is it, dearie?\" An old woman with puffy blue hair floated up beside me and handed me a towel. \"You're usually much better than this. Bad fortune today?\" She dropped some ghostly ash into my beer mug.",
+    "\"I told you not to do that, Eri. It changes the taste.\" I signalled to Dean for a beer. He nodded and weaved between the other ghosts tossing dishes across the tables, ducking a full glass of beer one of them threw at his head on his way back to the bar.",
+    "\"Come on, what's eating you?\" Hideo floated upside down above me, hands under his chin. \"Did the new waiter turn you down?\"",
+    "\"Server!\" I shouted. \"Get the job right, you seventies relic.\"",
+    "\"Whatever.\" Hideo shrugged.",
+    "\"You'd be out of it, too, if you saw what I did. That poor geek, cursed to die drowning in pop idol junk. He was impaled by a statuette for crying out loud.\" I gagged. \"Even Kazu couldn't handle it.\"",
+    "Hideo dismissed me with a wave. \"Kid's a newbie. What is he, forty?\"",
+    "I rolled my eyes.",
+    "\"Try again, dearie,\" Eri said. \"How about that song. The one with all the ice in it. You got a ninety-six on that the last time.\"",
+    "\"That one!\" My eyes lit up before I caught myself, and I slapped the mic in my hand. \"I hate that one. It's all in English.\"",
+    "\"Says the girl bringing it up.\" Hideo chortled. \"Face it, girlie, you love the challenge. You'll never get rid of us.\"",
+    "I stuck my tongue out at him, but even his crass comments couldn't erase the smile on my face. This was the best way to unwind after a long day.",
+    "The server set the beer down beside me and bent over, gasping.",
+    "\"You okay, Dean? This job isn't for the faint-hearted.\" I didn't know where the owner found all these pretty boys, but I wasn't complaining.",
+    "\"No problem, Ms. Minako. Just a lot of pressure in here. It's difficult to breathe sometimes with all the bodies.\" He straightened, and a bright smile filled his face. \"Mr. Hideo has even promised to teach me some of his old moves later.\"",
+    "\"Be careful. Some of those moves got him killed when the husbands found out.\" Dean just scratched his head and took away my empties. Watching him walk away, I picked up the beer and chugged it.",
+    "\"He's twenty years younger than you, Minako.\" Eri shook her head and tapped some more ash from her cigarette onto my shoes. \"You'll get arrested.\"",
+    "Huffing, I picked up the mic. \"I'll have you know, I'm only thirty-seven and could get any man I wanted.\"",
+    "Hideo scoffed.",
+    "I smashed the play button on the karaoke machine. The tune from the ice princess movie drifted from the speakers, building slowly. I closed my eyes and sang it by heart. If I were ever going to reach a perfect score, it would be with this one, so I remembered to screw up a few times. Finishing on the last high note, I let the silence stretch across the small bar.",
+    "My breath caught when the tally screen rolled, stopping on ninety-eight point three.",
+    "\"Almost there, dearie.\" Eri patted my head, and a chill flowed through me. \"Try again tomorrow?\"",
+    "I didn't answer her. That was too close. I grabbed the mic again. I needed to reset the tally. \"One last song.\"",
+    "\"I get to choose this one.\" Hideo floated towards me and started punching in random words on the keypad. \"Ah! Here it is.\" He flipped it around and showed me the song.",
+    "\"Baby Metal! That one's impossible!\" I shot to my feet. \"Nobody could do that on their first try!\"",
+    "\"If you're afraid, I'm sure we could find someone else.\" A malicious glint flashed in his eyes. \"Dean, maybe.\"",
+    "\"Give me that. You're not trapping him in this sick game.\" I pushed the button, and harsh, heavy metal music blared through the bar. I pounded the beat out with my foot, sweat plastering my hair to my forehead. Finishing on my knees, I looked at the score again.",
+    "The numbers slowly rolled over, stopping at one hundred. Small fireworks broke the silence.",
+    "\"You did it,\" Eri said quietly, dropping her cigarette to the floor.",
+    "Hideo's mouth was open, but for once, nothing came out. \"That can't be right.\" His voice was shaking. \"There must be a mistake.\"",
+    "My heart was in my throat. \"No mistake. It's a hundred points. A deal's a deal.\" My voice cracked.",
+    "Hideo gestured to his friends, and they slowly moved towards the door. \"We'll honour our bargain, Ms. Minako.\" He refused to look at me. \"It was a pleasure knowing you.\" He turned around and left the bar.",
+    "Eri sighed and dropped some ash into the empty beer mug. \"You could've missed one note, couldn't you?\" She shook her head and followed Hideo out through the door. \"Ya broke his heart.\"",
+    "I collapsed on stage. Three years, and I finally did it. Purified my karaoke bar. The ghosts were gone, and the owner was coming over. I ducked into the toilet and shoved my fist into my mouth to muffle the sobs. Why had I done that!"
+  ]
+};
+
+export default bookContent;

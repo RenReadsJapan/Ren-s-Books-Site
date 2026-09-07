@@ -583,6 +583,17 @@ coverImage: "/covers/shinji-02.png",
     coverImage: "/covers/murder-at-the-shujing.png",
     amazonUrl: "",
   },
+  {
+  slug: "ghost-karaoke",
+  catalog: "otherWorks",
+  number: 2,
+  title: "Ghost Karaoke",
+  description:
+    "A shrine maiden's regular karaoke night with her bar full of ghosts takes a turn when one of them bets everything on a perfect score.",
+  status: "published",
+  coverImage: "/covers/gk-01.png",
+  amazonUrl: "",
+},
 ];
  
 export function getCatalog(slug) {

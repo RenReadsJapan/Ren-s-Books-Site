@@ -372,9 +372,16 @@ export default function ReadOnline({ content }) {
   // Only show the Listen tab if this book actually has audio yet.
   // Books without an audioSrc (e.g. Ren titles before Sept 2026,
   // or ET books not yet recorded) just won't show the tab.
-  const hasAudio = Boolean(content.audioSrc);
+    const hasAudio = Boolean(content.audioSrc);
+  const hasVocabulary = Boolean(content.vocabulary && content.vocabulary.length);
+  const hasWorkbook = Boolean(content.workbook);
 
-  const TABS = ['Story', ...(hasAudio ? ['Listen'] : []), 'Vocabulary', 'Workbook'];
+  const TABS = [
+    'Story',
+    ...(hasAudio ? ['Listen'] : []),
+    ...(hasVocabulary ? ['Vocabulary'] : []),
+    ...(hasWorkbook ? ['Workbook'] : []),
+  ];
 
   const [tab, setTab] = useState('Story');
 
@@ -429,14 +436,14 @@ export default function ReadOnline({ content }) {
         </div>
       )}
 
-      {tab === 'Vocabulary' && (
+            {hasVocabulary && tab === 'Vocabulary' && (
         <VocabularyTab
           vocabulary={content.vocabulary}
           idioms={content.idioms}
           culturalNotes={content.culturalNotes}
         />
       )}
-      {tab === 'Workbook' && <WorkbookTab workbook={content.workbook} />}
+      {hasWorkbook && tab === 'Workbook' && <WorkbookTab workbook={content.workbook} />}
     </div>
   );
 }
