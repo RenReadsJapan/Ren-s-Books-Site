@@ -35,6 +35,7 @@ export const catalogs = {
     description:
       "Shinji is a young adult mystery/thriller series. Book one, Shinji Inherits a Ghost House, opens the series — with more titles on the way.",
     accent: "shinji",
+    charactersImage: "/characters/shinji-characters.png",
     catalogCode: "SHJ",
   },
   otherWorks: {
