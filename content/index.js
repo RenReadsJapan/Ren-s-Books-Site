@@ -9,6 +9,8 @@ import et05 from './everyday-together/et-05';
 import et052 from './everyday-together/et-05-2';
 import et06 from './everyday-together/et-06';
 import et062 from './everyday-together/et-06-2';
+import et07 from './everyday-together/et-07-keigo-is-my-enemy';
+import et072 from './everyday-together/et-07-2-keigo-is-my-enemy';
 import murderAtTheShujing from './other-works/murder-at-the-shujing';
 import ghostKaraoke from './other-works/ghost-karaoke';
 import ren01 from './ren/ren-01';
@@ -27,6 +29,8 @@ const bookContent = {
   'et-05-2-i-hate-taking-care-of-a-sick-person': et052,
   'et-06-anything-but-work': et06,
   'et-06-2-anything-but-work': et062,
+  'et-07-keigo-is-my-enemy': et07,
+  'et-07-2-keigo-is-my-enemy': et072,
   'murder-at-the-shujing': murderAtTheShujing,
   'ghost-karaoke': ghostKaraoke,
   'ren-01-the-haunted-shrine-visit': ren01,
