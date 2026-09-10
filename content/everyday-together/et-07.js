@@ -1,5 +1,5 @@
 const bookContent = {
-  "slug": "et-07-keigo-is-my-enemy",
+  "slug": "et-07",
   "title": "Keigo is my Enemy",
   "series": "Everyday Together",
   "level": "A2",
@@ -49,7 +49,7 @@ const bookContent = {
     "\"If this were in English, what would you do?\" asked Kaoru.",
     "\"That's easy,\" said Takumi. \"Polite English is simple compared to keigo.\" He pulled out a notebook. It said 'Keigo' on the cover. He opened it to a page covered in notes. \"What if I use something like 'gozonji desu ka' when I want to say 'goran ni narimasu'?\"",
     "\"Well, the first one means 'to know' and the second one means 'to look at',\" said Kaoru.",
-    "\"I know that, but I keep mixing them up with my boss. I can't do that during the presentation,\" said Takumi.",
+    "\"I know that, but I keep mixing them up with my boss. \"I can't do that during the presentation,\" said Takumi.",
     "\"You could write them down on your hand?\" said Daichi. \"Or just call everybody, sama. It's really polite.\"",
     "Kaoru patted Daichi's knee. \"You're not helping, Dai-chan,\" she said.",
     "\"Hey,\" Daichi said, looking hurt.",
