@@ -437,7 +437,7 @@ coverImage: "/covers/et-06-2.png",
     wordCount: "~2,700 words",
     status: "published",
 coverImage: "/covers/et-07.png",
-    amazonUrl: "",
+    amazonUrl: "https://www.amazon.co.jp/dp/B0HJCYTMD2",
   },
   {
     slug: "et-07-2-keigo-is-my-enemy",
