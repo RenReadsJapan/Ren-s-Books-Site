@@ -464,7 +464,7 @@ coverImage: "/covers/et-07-2.png",
     wordCount: "~2,900 words",
     status: "published",
 coverImage: "/covers/et-08.png",
-    amazonUrl: "",
+    amazonUrl: "https://www.amazon.co.jp/Raymond-Paquette-ebook/dp/B0HJV57RM5/?_encoding=UTF8&pd_rd_w=eWUHB&content-id=amzn1.sym.d8573ffc-369a-4e95-b3ba-ae37a2f8f38f&pf_rd_p=d8573ffc-369a-4e95-b3ba-ae37a2f8f38f&pf_rd_r=355-9044790-3208661&pd_rd_wg=oNEOm&pd_rd_r=b747c3e0-8f0c-49ba-9220-d754697201b1",
   },
  {
     slug: "et-09-the-onsen-trip",
