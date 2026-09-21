@@ -11,6 +11,7 @@ import et06 from './everyday-together/et-06';
 import et062 from './everyday-together/et-06-2';
 import et07 from './everyday-together/et-07';
 import et072 from './everyday-together/et-07-2';
+import et08 from './everyday-together/et-08';
 import murderAtTheShujing from './other-works/murder-at-the-shujing';
 import ghostKaraoke from './other-works/ghost-karaoke';
 import ren01 from './ren/ren-01';
@@ -31,6 +32,7 @@ const bookContent = {
   'et-06-2-anything-but-work': et062,
   'et-07-keigo-is-my-enemy': et07,
   'et-07-2-keigo-is-my-enemy': et072,
+  'et-08-the-great-cookie-spark': et08, // CHECK: confirm this key matches the slug you use in books.js
   'murder-at-the-shujing': murderAtTheShujing,
   'ghost-karaoke': ghostKaraoke,
   'ren-01-the-haunted-shrine-visit': ren01,
