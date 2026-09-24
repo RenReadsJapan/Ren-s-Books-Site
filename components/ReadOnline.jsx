@@ -183,21 +183,25 @@ function WorkbookTab({ workbook }) {
 
   return (
     <div style={{ maxWidth: '65ch', margin: '0 auto' }}>
-      <h3>Word Bank</h3>
-      <p style={{ marginBottom: '1.5em' }}>
-        {workbook.wordBank.join(' · ')}
-      </p>
+            {workbook.wordBank && workbook.fillInBlank && (
+        <>
+          <h3>Word Bank</h3>
+          <p style={{ marginBottom: '1.5em' }}>
+            {workbook.wordBank.join(' · ')}
+          </p>
 
-      <h3>A. Fill in the Blank</h3>
-      <ol style={{ marginBottom: '2em' }}>
-        {workbook.fillInBlank.map((q, i) => (
-          <li key={i} style={{ marginBottom: '0.8em' }}>
-            {q.split('______')[0]}
-            <input style={inputStyle} type="text" aria-label={`answer ${i + 1}`} />
-            {q.split('______')[1]}
-          </li>
-        ))}
-      </ol>
+          <h3>A. Fill in the Blank</h3>
+          <ol style={{ marginBottom: '2em' }}>
+            {workbook.fillInBlank.map((q, i) => (
+              <li key={i} style={{ marginBottom: '0.8em' }}>
+                {q.split('______')[0]}
+                <input style={inputStyle} type="text" aria-label={`answer ${i + 1}`} />
+                {q.split('______')[1]}
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
 
       {workbook.multipleChoice && workbook.multipleChoice.length > 0 && (
         <>
@@ -316,12 +320,16 @@ function WorkbookTab({ workbook }) {
       borderRadius: '4px',
     }}
   >
-    <h4 style={{ marginBottom: '0.6em', color: '#fff' }}>Section A — Fill in the Blank</h4>
-    <ol style={{ marginBottom: '1.5em', color: '#f0f0f0' }}>
-      {workbook.fillInBlankAnswers.map((ans, i) => (
-        <li key={i} style={{ marginBottom: '0.3em' }}>{ans}</li>
-      ))}
-    </ol>
+       {workbook.fillInBlankAnswers && workbook.fillInBlankAnswers.length > 0 && (
+      <>
+        <h4 style={{ marginBottom: '0.6em', color: '#fff' }}>Section A — Fill in the Blank</h4>
+        <ol style={{ marginBottom: '1.5em', color: '#f0f0f0' }}>
+          {workbook.fillInBlankAnswers.map((ans, i) => (
+            <li key={i} style={{ marginBottom: '0.3em' }}>{ans}</li>
+          ))}
+        </ol>
+      </>
+    )}
 
         {workbook.multipleChoice && workbook.multipleChoice.length > 0 && (
       <>
