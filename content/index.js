@@ -20,6 +20,7 @@ import ren03 from './ren/ren-03';
 import ren04 from './ren/ren-04';
 import ren05 from './ren/ren-05';
 import ren06 from './ren/ren-06';
+import ren07 from './ren/ren-07';
 
 const bookContent = {
   'et-01-the-wrong-line-message': et01, // CHECK: does this match the slug in books.js? Fix if not.
@@ -40,7 +41,8 @@ const bookContent = {
   'ren-03-rens-first-day-at-school': ren03,
   'ren-04-festival-fever': ren04,
   'ren-05-time-slip-trouble': ren05,
-  'ren-06-valentines-day-mix-up': ren06
+  'ren-06-valentines-day-mix-up': ren06,
+  'ren-07-the-soccer-bully': ren07
 };
 
 export default bookContent;
