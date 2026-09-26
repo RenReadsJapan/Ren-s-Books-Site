@@ -311,6 +311,18 @@ coverImage: "/covers/ren-20.png",
     coverImage: "/covers/ren-b1-02.png",
     amazonUrl: "",
   },
+  {
+    slug: "ren-b1-03-the-day-we-left-our-phones-at-home",
+    catalog: "ren",
+    number: 3,
+    level: "B1",
+    title: "The Day We Left Our Phones at Home",
+    description:
+      "Ren is spending more time on his phone than with Hana, and she is not happy about it. When he forgets a date, he promises to leave his phone at home. However, when a scavenger hunts continues to interfear with their day out, Ren must decide whether to break his promise or not.",
+    status: "published",
+    coverImage: "/covers/ren-b1-03.png",
+    amazonUrl: "",
+  },
  
   // ---------------------------------------------------------------------
   // EVERYDAY TOGETHER
