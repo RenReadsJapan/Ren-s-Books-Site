@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 // Turns *word* into an italicized span, and a lone scene-break marker
 // into a centered divider. Keeps the content file free of JSX.
@@ -377,6 +377,7 @@ function WorkbookTab({ workbook }) {
 }
 
 export default function ReadOnline({ content }) {
+  const router = useRouter();
   // Only show the Listen tab if this book actually has audio yet.
   // Books without an audioSrc (e.g. Ren titles before Sept 2026,
   // or ET books not yet recorded) just won't show the tab.
@@ -395,9 +396,27 @@ export default function ReadOnline({ content }) {
 
   return (
     <div style={{ maxWidth: '900px', margin: '0 auto', padding: '2em 1em' }}>
-      <Link href={`/books/${content.slug}`} style={{ fontSize: '0.85em' }}>
+            <button
+        onClick={() => {
+          if (window.history.length > 1) {
+            router.back();
+          } else {
+            router.push(`/books/${content.slug}`);
+          }
+        }}
+        style={{
+          fontSize: '0.85em',
+          background: 'none',
+          border: 'none',
+          padding: 0,
+          cursor: 'pointer',
+          color: 'inherit',
+          textDecoration: 'underline',
+          fontFamily: 'inherit',
+        }}
+      >
         &larr; Back to book page
-      </Link>
+      </button>
 
       <h1 style={{ marginTop: '0.5em', marginBottom: '0.2em' }}>{content.title}</h1>
       <p style={{ color: 'var(--paper-text-soft, #999)', marginBottom: '1.5em' }}>
