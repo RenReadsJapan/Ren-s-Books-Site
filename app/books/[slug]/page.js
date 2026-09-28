@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { books, getBookBySlug, catalogs } from "@/data/books";
 import { accentOf } from "@/lib/accent";
 import ReviewSection from "@/components/ReviewSection";
+import BackLink from "@/components/BackLink";
 import bookContent from "@/content";
  
 export function generateStaticParams() {
@@ -33,13 +34,13 @@ export default async function BookPage({ params }) {
  
   return (
     <div className="max-w-3xl mx-auto px-6 py-16">
-      <Link
+      <BackLink
         href={`/${catalog.slug}`}
         className="font-mono text-xs uppercase tracking-[0.14em] inline-block mb-8"
         style={{ color: accent.strong }}
       >
         ← {catalog.name}
-      </Link>
+      </BackLink>
  
       <div className={book.coverImage ? "sm:flex sm:gap-8 mb-8" : ""}>
         {book.coverImage && (
