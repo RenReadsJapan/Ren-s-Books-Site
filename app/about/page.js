@@ -28,12 +28,12 @@ export default function AboutPage() {
           That classroom experience shapes everything he writes: graded
           readers that learners actually want to finish, set in a Japan
           they recognize, at a language level that builds confidence
-          without condescension.
+          without pressure.
         </p>
         <p>
           He is the author of the <strong>Ren English Readers</strong>{" "}
           series for young learners, <strong>Everyday Together</strong> for
-          adult learners, and the YA mystery/thriller series{" "}
+          adult learners, and the YA paranormal mystery/thriller series{" "}
           <strong>Shinji</strong>. He is based in Nara.
         </p>
       </div>
